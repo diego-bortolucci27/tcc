@@ -1,0 +1,2 @@
+Pasta destinada para uso do JavaScript !!
+Arquivo teste para Versionamento !!!

@@ -1,0 +1,2 @@
+Pasta destinada para uso do Banco de Dados !!
+Arquivo teste para Versionamento !!!
