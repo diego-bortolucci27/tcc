@@ -18,4 +18,4 @@ O objetivo principal do nosso projeto, além de facilitar o trabalho da portaria
 
 **Professor Co-Orientador:** Leandro Moreira.
 
-Escola: Etec Prof. Jadyr Sales - Porto Ferreira/SP - 202
+**Escola:** Etec Prof. Jadyr Sales - Porto Ferreira/SP - 202
