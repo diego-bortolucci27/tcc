@@ -7,14 +7,14 @@ O Projeto visa fazer um Controle de Entrada e de Saída de alunos da escola Etec
 O objetivo principal do nosso projeto, além de facilitar o trabalho da portaria da escola, computadorizando o atual trabalho realizado em cadernos, também consiste em aumentar a segurança escolar, tanto para alunos quanto para os funcionários.
 
 
-Alunos:
+**Alunos:**
 * Diego Lopes Bortolucci - @diego-bortolucci27;
 * Filipi Henrique Pérez - @FilipiPerez;
 * Marcus Vinícius Pissinati Andreoli - @M4rcus0210;
 * Viniciús Gabriel Freitas - @ViniciusFreitas018;
 * Vítor Adrian Alves Vieira;
 
-Professor Orientador: Rui Cesar Ranzani.
-Professor Co-Orientador: Leandro Moreira.
+**Professor Orientador:** Rui Cesar Ranzani.
+**Professor Co-Orientador:** Leandro Moreira.
 
 Escola: Etec Prof. Jadyr Sales - Porto Ferreira/SP - 202
