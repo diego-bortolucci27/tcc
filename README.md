@@ -8,11 +8,11 @@ O objetivo principal do nosso projeto, além de facilitar o trabalho da portaria
 
 
 Alunos:
-*Diego Lopes Bortolucci - @diego-bortolucci27;
-*Filipi Henrique Pérez - @FilipiPerez;
-*Marcus Vinícius Pissinati Andreoli - @M4rcus0210;
-*Viniciús Gabriel Freitas - @ViniciusFreitas018;
-*Vítor Adrian Alves Vieira;
+* Diego Lopes Bortolucci - @diego-bortolucci27;
+* Filipi Henrique Pérez - @FilipiPerez;
+* Marcus Vinícius Pissinati Andreoli - @M4rcus0210;
+* Viniciús Gabriel Freitas - @ViniciusFreitas018;
+* Vítor Adrian Alves Vieira;
 
 Professor Orientador: Rui Cesar Ranzani.
 Professor Co-Orientador: Leandro Moreira.
