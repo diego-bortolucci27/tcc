@@ -2,39 +2,29 @@
 
     include_once("conexao.php");
 
-    //$id = $_POST['id'];
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $sexo = $_POST['sexo'];
-    $dataNascimento = $_POST['dataNascimento'];
-    $telefone = $_POST['telefone'];
-    $celular = $_POST['celular'];
-    $cep = $_POST['cep'];
-    $estado = $_POST['estado'];
-    $cidade = $_POST['cidade'];
-    $endereco = $_POST['endereco'];
-    $numero = $_POST['numero'];
     $rm = $_POST['rm'];
-    $setor = $_POST['setor'];
-    $senha = $_POST['senha'];
-    
-    /*
-    $sql = "INSERT INTO * table VALUES (
-    '$nome',
-    '$email',
-    '$sexo',
-    '$dataNascimento',
-    '$telefone',
-    '$celular',
-    '$cep',
-    '$estado',
-    '$cidade',
-    '$endereco',
-    '$numero',
+    $digital = "456";
+    $nome = $_POST['nome'];
+    $serie = $_POST['serie'];
+    $curso = $_POST['curso'];
+    $telefone = $_POST['telefone'];
+    $email = $_POST['email'];
+    $nome_responsavel = $_POST['responsavel'];
+    $telefone_responsavel = $_POST['telResponsavel'];
+    $email_responsavel = $_POST['emailResponsavel'];
+
+    $sql = "INSERT INTO alunos (rm, digital, nome, serie, curso, telefone, email, nome_responsavel, telefone_responsavel, email_Responsavel)VALUES (
     '$rm',
-    '$setor',
-    '$senha')";
-    */
+    '$digital',
+    '$nome',
+    '$serie',
+    '$curso',
+    '$telefone',
+    '$email',
+    '$nome_responsavel',
+    '$telefone_responsavel',
+    '$email_responsavel
+    ')";
 
     $query = mysqli_query($conexao, $sql);
 
