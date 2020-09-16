@@ -52,21 +52,29 @@
 
   <div class="jumbotron jumbotron-fluid" style='background-color: #DC300B;'>
   <div class="container.fluid">
-    <h1 class="display-4" class="ajuda_sobre" style='text-align:center; color:white;'>SOBRE</h1>
+    <h1 class="display-4" class="ajuda_sobre" style='text-align:center; color:white;'>Que tal nos conhecer melhor!</h1>
+    <h2 class="display-5" class="ajuda_sobre" style='text-align:left; color:white; margin-left: 40px;''>Sobre nós </h2>
     <p class="lead" style='color:white; margin:25px;'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere voluptas accusamus sint maiores deleniti, doloremque similique, esse unde suscipit ducimus animi vero magni cumque obcaecati velit aliquam iusto eveniet illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, incidunt omnis optio sequi harum vel, inventore possimus cupiditate, quam placeat non tenetur eaque natus fuga quod molestiae officia consequuntur dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, distinctio reprehenderit nulla minus quisquam ea! Est laborum perspiciatis corrupti quidem numquam pariatur laudantium repudiandae animi aperiam vitae, ducimus quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, dolores. Quod eligendi ex nobis ducimus voluptate, cupiditate natus expedita fugiat similique! Quasi, earum! Amet saepe vel animi pariatur atque! Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque minima iste? Molestiae voluptatem explicabo possimus eos sequi alias est sed voluptatum dignissimos! Ex, iure sunt. In corrupti vero explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum omnis consequatur natus dolore culpa sit distinctio eos enim. Hic facilis cumque voluptas odit deleniti at beatae accusamus voluptatem earum libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, perferendis numquam? Iure quia libero itaque a! Amet doloremque culpa, eveniet ad labore est nostrum commodi cumque odio reiciendis voluptates quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus, facilis porro laborum labore laboriosam? Autem minima ab hic. Eos voluptatum quas delectus recusandae, aspernatur repellat error dolorum eveniet amet?</p>
   </div>
 </div>
 
    <!-- FIM INFO 1-->
-
+<section class="sobre_projeto"> 
+  <div class="jumbotron jumbotron-fluid" style='background-color: white;'>
+    <div class="container.fluid">
+      <h2 class="display-5" class="ajuda_sobre" style='text-align:left; color:#DC300B; margin-left: 40px;''>Sobre o projeto </h2>
+      <p class="lead" style='color:#DC300B; margin:25px;'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere voluptas accusamus sint maiores deleniti, doloremque similique, esse unde suscipit ducimus animi vero magni cumque obcaecati velit aliquam iusto eveniet illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, incidunt omnis optio sequi harum vel, inventore possimus cupiditate, quam placeat non tenetur eaque natus fuga quod molestiae officia consequuntur dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, distinctio reprehenderit nulla minus quisquam ea! Est laborum perspiciatis corrupti quidem numquam pariatur laudantium repudiandae animi aperiam vitae, ducimus quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, dolores. Quod eligendi ex nobis ducimus voluptate, cupiditate natus expedita fugiat similique! Quasi, earum! Amet saepe vel animi pariatur atque! Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque minima iste? Molestiae voluptatem explicabo possimus eos sequi alias est sed voluptatum dignissimos! Ex, iure sunt. In corrupti vero explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum omnis consequatur natus dolore culpa sit distinctio eos enim. Hic facilis cumque voluptas odit deleniti at beatae accusamus voluptatem earum libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, perferendis numquam? Iure quia libero itaque a! Amet doloremque culpa, eveniet ad labore est nostrum commodi cumque odio reiciendis voluptates quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus, facilis porro laborum labore laboriosam? Autem minima ab hic. Eos voluptatum quas delectus recusandae, aspernatur repellat error dolorum eveniet amet?</p>
+    </div>
+  </div>
+</section>
     <!--contato-->
-    <div class="jumbotron jumbotron-fluid" style='background-color: #DC300B; margin-top: -25px'>
+    <div class="jumbotron jumbotron-fluid" style='background-color: #DC300B; margin-top: -25px; height: 400px;'>
         <div class="container.fluid">
-        <h1 class="display-4" class="ajuda_sobre" style='text-align:left; color:white; margin-left:130px; font-size: 30px;'>CONTATO</h1>
+        <h1 class="display-4" class="ajuda_sobre" style='color:white; margin-left:885px; font-size: 30px; float: none;'>CONTATO</h1>
         </div>
-
             <!-- tabela --> 
-    <section class="tabela" style='width: 450px;height:350px; margin-left: 20px;'>  
+     <section>       
+    <section class="tabela" style='width: 450px;height:350px; margin-left: 20px; margin-top: 5px; float:left;'>  
     <table class="table" style='color:white'>
   <tbody>
     <tr>
@@ -96,23 +104,11 @@
  
             <!-- fim tabela --> 
 
-        <section class='ajuda_mensagem' style='width: 500px; float:none; margin-top: -350px; margin-left: 700px;color:white;'>
-        <form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Deixe sua dúvida aqui</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</form>
-
         </section>
 
         <!-- Info Escola-->
 
-          <section class="info_escola" style='float: right; margin-top:-220px; margin-right: 55px;'> 
+          <section class="info_escola" style='float: right; margin-top:7px; margin-right: 55px;'> 
           <section class="tabela" style='width: 450px;height:350px; margin-left: 20px;'>  
     <table class="table" style='color:white'>
   <tbody>
@@ -136,6 +132,7 @@
           </section>
 
     </div>
+  </section>
     <!--fim contato-->
  </body>
  </html>
