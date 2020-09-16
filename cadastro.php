@@ -6,11 +6,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Cadastro</title>
+    <title>Cadastro de Alunos</title>
 </head>
 <body>
     <div class="principal container-fluid">
-        <h1>Cadastro</h1>
+        <h1>Cadastro dos Alunos</h1>
         <br><br>
     <form action="inserir.php" method="POST">
         <div class="form-group col-md-6">
