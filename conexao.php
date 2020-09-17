@@ -5,5 +5,5 @@
     if (!$conexao)
         echo "<script> alert('Não foi possível conectar ao Banco de Dados!') </script>";
     else
-        echo "Conectado!";
+        echo "";
 ?>
