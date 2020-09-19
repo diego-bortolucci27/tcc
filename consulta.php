@@ -34,6 +34,7 @@
                 <th scope="col">Responsável</th>
                 <th scope="col">Tel Responsável</th>
                 <th scope="col">Email Responsável</th>
+                <th scope="col">Ver infos</th>
             </tr>
             </thead>
             <?php
@@ -43,7 +44,7 @@
             ?>
             <tbody>
 			    <tr>
-                    <td class="table-active"> <?php echo $row['rm']; ?> </td>
+                    <td class="table-active"> <?php echo $row['rm']; ?> </a> </td>
 				    <td class="table-active"> <?php echo $row['nome']; ?> </td>
 				    <td class="table-active"> <?php echo $row['serie']; ?> </td>
                     <td class="table-active"> <?php echo $row['curso']; ?> </td>
@@ -52,6 +53,7 @@
                     <td class="table-active"> <?php echo $row['nome_responsavel']; ?> </td>
                     <td class="table-active"> <?php echo $row['telefone_responsavel']; ?> </td>
                     <td class="table-active"> <?php echo $row['email_Responsavel']; ?> </td>
+                    <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
 			    </tr>
             </tbody>
             <?php
