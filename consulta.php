@@ -21,6 +21,18 @@
             <h1 class="titulo"><b>Consulta de Dados - Alunos<b></h1>
         </center>
     </div>
+    <div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Curso
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="consultaAdm.php">Ver ETIM ADM</a>
+                <a class="dropdown-item" href="consultaInfo.php">Ver ETIM INFO</a>
+        </div>
+    </div>
+</div>
+    </div>
     <div class="table-responsive">
         <table class="table">
             <thead class="bg-danger">
