@@ -24,7 +24,7 @@
         <div class="form-group col-md-6">
           <label for="serie">Série</label>
             <select class="custom-select" id="serie" name="serie">
-              <option selected>Série</option>
+              <option selected hidden>Série</option>
               <option value="1º ANO">1º ANO</option>
               <option value="2º ANO">2º ANO</option>
               <option value="3º ANO">3º ANO</option>
