@@ -33,6 +33,8 @@
             <a class="dropdown-item" href="consulta3Adm.php">3º Ano</a>
         <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="consultaAdm.php">Ver ETIM ADM</a>
+            <a class="dropdown-item" href="consultaInfo.php">Ver ETIM INFO</a>
+        </div>
     </div>
     </div>
     <div class="table-responsive">
