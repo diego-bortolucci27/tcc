@@ -4,7 +4,7 @@
     require_once 'conexao.php';
 
     $sql = "SELECT * FROM view_infoaluno 
-    WHERE curso = 'ETIM ADMINISTRAÇÃO' AND serie = '2º Ano'";
+    WHERE curso = 'ETIM ADMINISTRAÇÃO' AND serie = '2º Ano' ORDER BY entrada DESC";
     $query = mysqli_query($conexao, $sql);
 
 ?>

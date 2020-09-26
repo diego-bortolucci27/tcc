@@ -6,7 +6,9 @@
     $rm = $_GET['rm'];
     //echo "RM: " . $rm;
 
-    $sql = "SELECT * FROM view_infoaluno WHERE rm = $rm";
+    $sql = "SELECT * FROM view_infoaluno 
+    WHERE rm = $rm
+    ORDER BY entrada DESC";
     $query = mysqli_query($conexao, $sql);
 ?>
 
