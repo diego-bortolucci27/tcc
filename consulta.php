@@ -21,6 +21,15 @@
             <h1 class="titulo"><b>Consulta de Dados - Alunos<b></h1>
         </center>
     </div>
+    <center>
+        <form action="busca.php" method="POST">
+            <div class="form-group col-md-6">
+                <label for="busca">Pesquisar</label>
+                <input type="text" class="form-control" id="busca" name="busca" placeholder="Digite o nome completo"><br>
+                <input type="submit" value="Pesquisar" class="btn btn-primary">
+            </div>
+        </form>
+    </center>
     <div>
         <div class="btn-group">
             <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
