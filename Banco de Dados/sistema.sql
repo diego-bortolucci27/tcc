@@ -3,9 +3,6 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Set-2020 às 19:04
--- Versão do servidor: 10.4.11-MariaDB
--- versão do PHP: 7.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +15,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `sistema`
+
 --
 
 -- --------------------------------------------------------
@@ -105,10 +102,13 @@ ALTER TABLE `horario`
 -- Limitadores para a tabela `horario`
 --
 ALTER TABLE `horario`
-  ADD CONSTRAINT `ID` FOREIGN KEY (`ID`) REFERENCES `funcionarios` (`id`),
-  ADD CONSTRAINT `RM` FOREIGN KEY (`RM`) REFERENCES `alunos` (`rm`);
+
 COMMIT;
 
+  ADD CONSTRAINT `ID` FOREIGN KEY (`id`) REFERENCES `funcionarios` (`id`),
+  ADD CONSTRAINT `RM` FOREIGN KEY (`rm`) REFERENCES `alunos` (`rm`);
+=======
+  ADD CONSTRAINT `ID` FOREIGN KEY (`ID`) REFERENCES `funcionarios` (`id`),
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
