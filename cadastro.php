@@ -6,28 +6,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Cadastro</title>
+    <title>Cadastro de Alunos</title>
 </head>
 <body>
     <div class="principal container-fluid">
-        <h1>Cadastro</h1>
+        <h1>Cadastro dos Alunos</h1>
         <br><br>
     <form action="inserir.php" method="POST">
         <div class="form-group col-md-6">
-            <label for="nome">RM</label>
-            <input type="number" name="rm" id="rm">
+            <label for="rm">RM</label>
+            <input type="number" class="form-control" id="rm" name="rm" placeholder="EX: 17170">
         </div>
         <div class="form-group col-md-6">
           <label for="nome">Nome Completo</label>
-          <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp" placeholder="Digite o Nome Completo">
+          <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp" placeholder="EX: Luís Eduardo Santos">
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-6">
           <label for="serie">Série</label>
-          <input type="text" class="form-control" id="serie" name="serie" placeholder="Ex: 3º Ano">
+            <select class="custom-select" id="serie" name="serie">
+              <option selected hidden>Série</option>
+              <option value="1º ANO">1º ANO</option>
+              <option value="2º ANO">2º ANO</option>
+              <option value="3º ANO">3º ANO</option>
+            </select>
+
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-6">
           <label for="curso">Curso</label>
-          <input type="text" class="form-control" id="curso" name="curso" placeholder="Ex: Etim Infoweb">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="curso" id="curso" value="ETIM INFOWEB">
+              <label class="form-check-label" for="info">
+                ETIM INFOWEB
+              </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="curso" id="curso" value="ETIM ADM">
+              <label class="form-check-label" for="adm">
+                ETIM ADM
+              </label>
+          </div>
         </div>
         <div class="form-group col-md-6">
             <label for="telefone">Telefone</label>
@@ -35,11 +52,11 @@
         </div>
         <div class="form-group col-md-6">
           <label for="email">Email</label>
-          <input type="text" class="form-control" id="email" name="email" placeholder="Digite o email">
+          <input type="text" class="form-control" id="email" name="email" placeholder="Ex: luis_santos@etec.sp.gov.br">
         </div>
         <div class="form-group col-md-6">
           <label for="responsavel">Nome do Responsável</label>
-          <input type="text" class="form-control" id="responsavel" name="responsavel" aria-describedby="emailHelp" placeholder="Digite o Nome do Responsável">
+          <input type="text" class="form-control" id="responsavel" name="responsavel" aria-describedby="emailHelp" placeholder="Ex: Antônio Lopes Cardoso">
         </div>
         <div class="form-group col-md-6">
             <label for="telefoneResponsavel">Telefone Responsável</label>
@@ -47,7 +64,7 @@
         </div>
         <div class="form-group col-md-6">
           <label for="emailResponsavel">Email Responsável</label>
-          <input type="text" class="form-control" id="emailResponsavel" name="emailResponsavel" placeholder="Digite o email do Responsável">
+          <input type="text" class="form-control" id="emailResponsavel" name="emailResponsavel" placeholder="Ex: antonio_cardoso@gmail.com">
         </div>
         <input type="submit" value="Cadastrar" class="btn btn-primary">
     </form>
