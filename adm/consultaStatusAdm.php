@@ -1,7 +1,7 @@
 <?php
 
-    require_once 'head.php';
-    require_once 'conexao.php';
+    require_once '../head.php';
+    require_once '../conexao.php';
 
     $sql = "SELECT * FROM view_infoaluno WHERE curso = 'ETIM ADMINISTRAÇÃO' ORDER BY entrada DESC";
     $query = mysqli_query($conexao, $sql);
@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/consulta.css">
+    <link rel="stylesheet" href="../css/consulta.css">
     <title>Consulta</title>
 </head>
 <body>

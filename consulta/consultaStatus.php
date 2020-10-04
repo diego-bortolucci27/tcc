@@ -1,10 +1,11 @@
 <?php
 
-    require_once "../conexao.php";
-    require_once '../head.php';
+    require_once 'head.php';
+    require_once 'conexao.php';
 
-    $sql = "SELECT * FROM alunos WHERE curso = 'ETIM ADMNISTRAÇÃO'";
+    $sql = "SELECT * FROM view_infoaluno";
     $query = mysqli_query($conexao, $sql);
+
 ?>
 
 <!DOCTYPE html>
@@ -12,29 +13,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/consulta.css">
+    <link rel="stylesheet" href="css/consulta.css">
     <title>Consulta</title>
 </head>
 <body>
     <div>
         <center>
-            <h1 class="titulo"><b>Consulta de Dados - ETIM ADMINISTRAÇÃO<b></h1>
+            <h1 class="titulo"><b>Consulta de Dados - Alunos<b></h1>
         </center>
     </div>
     <div>
         <div class="btn-group">
             <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Série
+                Curso
             </button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="consulta1Adm.php">1º Ano</a>
-            <a class="dropdown-item" href="consulta2Adm.php">2º Ano</a>
-            <a class="dropdown-item" href="consulta3Adm.php">3º Ano</a>
-        <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="consultaAdm.php">Ver ETIM ADM</a>
-            <a class="dropdown-item" href="consultaInfo.php">Ver ETIM INFO</a>
-        </div>
-        </div>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="consultaStatusAdm.php">Ver ETIM ADM</a>
+                <a class="dropdown-item" href="consultaStatusInfo.php">Ver ETIM INFO</a>
         </div>
     </div>
 </div>
@@ -47,11 +42,8 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Série</th>
                 <th scope="col">Curso</th>
-                <th scope="col">Telefone</th>
-                <th scope="col">Email</th>
-                <th scope="col">Responsável</th>
-                <th scope="col">Tel Responsável</th>
-                <th scope="col">Email Responsável</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Saída</th>
                 <th scope="col">Ver infos</th>
             </tr>
             </thead>
@@ -66,11 +58,8 @@
 				    <td class="table-active"> <?php echo $row['nome']; ?> </td>
 				    <td class="table-active"> <?php echo $row['serie']; ?> </td>
                     <td class="table-active"> <?php echo $row['curso']; ?> </td>
-                    <td class="table-active"> <?php echo $row['telefone']; ?> </td>
-                    <td class="table-active"> <?php echo $row['email']; ?> </td>
-                    <td class="table-active"> <?php echo $row['nome_responsavel']; ?> </td>
-                    <td class="table-active"> <?php echo $row['telefone_responsavel']; ?> </td>
-                    <td class="table-active"> <?php echo $row['email_Responsavel']; ?> </td>
+                    <td class="table-active"> <?php echo $row['entrada']; ?> </td>
+                    <td class="table-active"> <?php echo $row['saida']; ?> </td>
                     <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
 			    </tr>
             </tbody>
