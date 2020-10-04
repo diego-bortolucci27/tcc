@@ -28,8 +28,8 @@
                 Curso
             </button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="consultaStatusAdm.php">Ver ETIM ADM</a>
-                <a class="dropdown-item" href="consultaStatusInfo.php">Ver ETIM INFO</a>
+                <a class="dropdown-item" href="adm/consultaStatusAdm.php">Ver ETIM ADM</a>
+                <a class="dropdown-item" href="info/consultaStatusInfo.php">Ver ETIM INFO</a>
         </div>
     </div>
 </div>
