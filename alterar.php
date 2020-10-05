@@ -4,7 +4,7 @@
   require_once 'conexao.php';
 
   $rm = $_GET['rm'];
-  
+
   $sql = "SELECT * FROM alunos WHERE rm = $rm";
   $query = mysqli_query($conexao, $sql);
 
@@ -26,18 +26,16 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/alterar.css">
     <title>Alterar cadastro</title>
 </head>
 <body>
+  <div class="container-fluid">
+    <center>
+      <h1 class="titulo"><b>Alterar Cadastro</b></h1>
+    </center>
     <form action="update.php" method="POST">
         <div class="form-group col-md-6">
-            <label for="nome">RM</label>
             <input type="hidden" class="form-control" id="rm" name="rm" aria-describedby="emailHelp" placeholder="EX:99999" value="<?php echo $rm; ?>">
           </div>
         <div class="form-group col-md-6">
@@ -74,7 +72,6 @@
           </div>
           <input type="submit" value="Modificar" class="btn btn-primary">
       </form>
-      </div>
-    </form>
+  </div>
 </body>
 </html>
