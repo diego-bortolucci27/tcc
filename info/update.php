@@ -1,6 +1,6 @@
 <?php
-    require_once 'head.php';
-    require_once 'conexao.php';
+    require_once '../head.php';
+    require_once '../head.php';
 
     $rm = $_POST['rm'];
     var_dump($rm);

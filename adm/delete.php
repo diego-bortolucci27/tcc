@@ -1,9 +1,9 @@
 <?php
 
-    require_once 'conexao.php';
-    require_once 'head.php';
+    require_once '../head.php';
+    require_once '../conexao.php';
 
-    $rm = $_GET['rm'];
+    $rm = $_POST['rm'];
     //var_dump($rm);
     $sql = "DELETE FROM alunos WHERE rm = '$rm'";
 
