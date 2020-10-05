@@ -2,6 +2,7 @@
 
     require_once "../conexao.php";
     require_once '../head.php';
+    require_once '../pesquisa.php';
 
     $sql = "SELECT * FROM alunos WHERE curso = 'ETIM ADMNISTRAÇÃO'";
     $query = mysqli_query($conexao, $sql);
@@ -32,7 +33,7 @@
             <a class="dropdown-item" href="consulta3Adm.php">3º Ano</a>
         <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="consultaAdm.php">Ver ETIM ADM</a>
-            <a class="dropdown-item" href="consultaInfo.php">Ver ETIM INFO</a>
+            <a class="dropdown-item" href="../info/consultaInfo.php">Ver ETIM INFO</a>
         </div>
         </div>
         </div>

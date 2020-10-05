@@ -1,7 +1,7 @@
 <?php
 
-    require_once 'conexao.php';
-    require_once 'head.php';
+    require_once '../conexao.php';
+    require_once '../head.php';
 
     $sql = "SELECT * FROM alunos 
     WHERE curso = 'ETIM INFOWEB' AND serie = '3º Ano'";
@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/consulta.css">
+    <link rel="stylesheet" href="../css/consulta.css">
     <title>Consulta</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
             <a class="dropdown-item" href="consulta2Info.php">2º Ano</a>
             <a class="dropdown-item" href="consulta3Info.php">3º Ano</a>
         <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="consultaAdm.php">Ver ETIM ADM</a>
+            <a class="dropdown-item" href="../adm/consultaAdm.php">Ver ETIM ADM</a>
             <a class="dropdown-item" href="consultaInfo.php">Ver ETIM INFO</a>
         </div>
     </div>

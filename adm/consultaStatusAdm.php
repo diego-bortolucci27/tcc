@@ -31,6 +31,10 @@
             <a class="dropdown-item" href="consultaStatus1Adm.php">1º Ano</a>
             <a class="dropdown-item" href="consultaStatus2Adm.php">2º Ano</a>
             <a class="dropdown-item" href="consultaStatus3Adm.php">3º Ano</a>
+            <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="consultaStatusAdm.php">Ver ETIM ADM</a>
+                <a class="dropdown-item" href="../info/consultaStatusInfo.php">Ver ETIM INFO</a>
+            </div>
         </div>
         </div>
     </div>

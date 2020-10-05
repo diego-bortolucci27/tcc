@@ -1,8 +1,8 @@
 <?php
     include_once("conexao.php");
-    include_once("update.html");
+    include_once("head.php");
 
-    $rm= $_POST['rm'];
+    $rm = $_POST['rm'];
     $nome = $_POST['nome'];
     $serie = $_POST['serie'];
     $curso = $_POST['curso'];
@@ -12,16 +12,15 @@
     $telefone_responsavel = $_POST['telResponsavel'];
     $email_responsavel = $_POST['emailResponsavel'];
 
-    $sql= "UPDATE alunos SET nome='$nome',
-    serie='$serie',
-    curso='$curso',
-    telefone='$telefone',
-    email='$email',
-    nome_responsavel='$nome_responsavel',
-    telefone_responsavel='$telefone_responsavel',
-    email_Responsavel='$email_responsavel'
-    WHERE rm='$rm'";
-     
+    $sql = "UPDATE alunos SET nome ='$nome',
+    serie = '$serie',
+    curso = '$curso',
+    telefone = '$telefone',
+    email = '$email',
+    nome_responsavel = '$nome_responsavel',
+    telefone_responsavel = '$telefone_responsavel',
+    email_Responsavel = '$email_responsavel'
+    WHERE rm = '$rm'";
 
     $query = mysqli_query($conexao, $sql);
 

@@ -1,17 +1,17 @@
 <?php
 
     include_once('conexao.php');
-    include_once('deletar.html');
+    include_once('head.php');
 
-    $rm=$_POST['rm'];
-    $sql= "DELETE FROM alunos WHERE rm='$rm'";
+    $rm = $_POST['rm'];
+    //var_dump($rm);
+    $sql = "DELETE FROM alunos WHERE rm = '$rm'";
 
-    $query= mysqli_query($conexao, $sql);
+    $query = mysqli_query($conexao, $sql);
 
-    if ($query){
-        echo "Cadastro excluido com sucesso!";
+    if($query){
+        echo "Usuário excluido com sucesso!";
     }else{
-        echo "Não foi possivel cadastrar o usuario";
+        echo "Não foi possivel excluir o usuario";
     }
-
 ?>
