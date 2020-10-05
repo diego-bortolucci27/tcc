@@ -79,7 +79,7 @@
                     <td class="table-active"> <?php echo $row['email_Responsavel']; ?> </td>
                     <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
                     <td class="table-active"><a href="delete.php?rm=<?php echo $row['rm'] ?>">Excluir</a></td>
-                    <td class="table-active"><a href="alterar.php?rm=<?php echo $row['rm'] ?>">Alterar</a></td>
+                    <td class="table-active"><a href="alterar.php?rm=<?php echo $row['rm'];?>">Alterar</a></td>
 			    </tr>
             </tbody>
             <?php

@@ -3,6 +3,7 @@
     include_once("head.php");
 
     $rm = $_POST['rm'];
+    var_dump($rm);
     $nome = $_POST['nome'];
     $serie = $_POST['serie'];
     $curso = $_POST['curso'];
