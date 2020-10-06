@@ -1,7 +1,8 @@
 <?php
 
-    include_once("conexao.php");
-    include("head.php");
+    require_once 'conexao.php';
+    require_once 'head.php';
+    require_once 'navbar.php';
 
     $rm = $_POST['rm'];
     $digital = "456";

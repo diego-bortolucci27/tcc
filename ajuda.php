@@ -1,8 +1,6 @@
 <?php
-
+  require_once 'navbar.php';
 ?>
-
-
 
  <!DOCTYPE html>
  <html lang="pt-br">
@@ -18,36 +16,6 @@
  </head>
  <body>
      
-  <!-- NAV BAR-->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">logo etec</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-      </li>
-    </ul>
-  </div>
-</nav>
-
- <!-- FIM NAV BAR -->
-
   <!-- INFO 1 -->
 
   <div class="jumbotron jumbotron-fluid" style='background-color: #DC300B;'>

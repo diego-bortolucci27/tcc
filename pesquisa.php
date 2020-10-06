@@ -1,7 +1,7 @@
 <?php
 
     require_once "head.php";
-
+    //require_once 'navbar.php';
 ?>
 
 <!DOCTYPE html>
@@ -29,4 +29,5 @@
             </center>
         </div>
     </div>
+</body>
 </html>

@@ -2,6 +2,7 @@
 
     require_once '../head.php';
     require_once '../conexao.php';
+    require_once 'navbar.php';
 
     $rm = $_POST['rm'];
     //var_dump($rm);

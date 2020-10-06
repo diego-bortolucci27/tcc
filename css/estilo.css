@@ -9,4 +9,21 @@
     color: white;
 }
 
+.body
+{
+    background-image: url(imgs/neve.jpg);
+}
 
+div .cabecalho
+{
+    color: black;
+    /*font-family: 'Finger Paint', cursive;*/
+    margin-top: 50px;
+}
+
+.subtitulo
+{
+    color: black;
+    /*font-family: 'Finger Paint', cursive;*/
+    /*font-family: 'Ceviche One'*/
+}
