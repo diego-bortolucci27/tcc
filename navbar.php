@@ -21,7 +21,6 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="adm/consultaAdm.php">Etim ADM</a>
           <a class="dropdown-item" href="info/consultaInfo.php">Etim Infoweb</a>
-          <a class="dropdown-item" href="#">Algo mais aqui</a>
         </div>
       </li>
     </ul>
