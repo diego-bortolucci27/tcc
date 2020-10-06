@@ -27,9 +27,9 @@
           <label style="color: black;" for="serie">Série</label>
             <select class="custom-select" id="serie" name="serie">
               <option style="color: black;" selected hidden>Série</option>
-              <option style="color: black;" value="1º ANO">1º ANO</option>
-              <option style="color: black;" value="2º ANO">2º ANO</option>
-              <option style="color: black;" value="3º ANO">3º ANO</option>
+              <option style="color: black;" value="1º Ano">1º Ano</option>
+              <option style="color: black;" value="2º Ano">2º Ano</option>
+              <option style="color: black;" value="3º Ano">3º Ano</option>
             </select>
 
         </div>
@@ -42,7 +42,7 @@
               </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="curso" id="curso" value="ETIM ADM">
+            <input class="form-check-input" type="radio" name="curso" id="curso" value="ETIM ADMNISTRAÇÃO">
               <label class="form-check-label" for="adm" style="color: black;">
                 ETIM ADM
               </label>
