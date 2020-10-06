@@ -19,7 +19,7 @@
           Cursos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="adm/consultaAdm.php">Etim ADM</a>
+          <a class="dropdown-item" href="../adm/consultaAdm.php">Etim ADM</a>
           <a class="dropdown-item" href="consultaInfo.php">Etim Infoweb</a>
         </div>
       </li>
