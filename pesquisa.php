@@ -29,5 +29,20 @@
             </center>
         </div>
     </div>
+    <div class="titulo">
+            <center>
+                <h1 class="h1">Pesquisa por RM</h1>
+            </center>
+        </div>
+        <div>
+            <center>
+                <form action="buscaRm.php" method="post">
+                    <div class="form-group col-md-6">
+                        <input type="number" class="form-control" id="busca" name="busca" placeholder="Digite o RM do aluno"><br>
+                        <input type="submit" value="Pesquisar" class="btn btn-outline-danger">
+                    </div>
+                </form>
+            </center>
+        </div>
 </body>
 </html>

@@ -38,7 +38,7 @@
             <hr class="my-4" >
         </div>
     </section>
-
+    <!--
     <center>
     <h1 style="color: black;"> Mais Informações: </h1>
     
@@ -49,7 +49,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="color: black;font-size: 30px">Informações:</h5>
                     <p class="card-text" style="color: black;font-size: 20px">Funções</p>
-                    <!-- Example split danger button -->
+                    <!-- Example split danger button>
                 <div class="btn-group">
                     <button type="button" class="btn btn-danger">Indice</button>
                     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -72,18 +72,70 @@
     </section>
     </center>
     <br>
-    <!--
-    <div class="card text-center">
-        <div class="card-header">
-          Cadastrar
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Cadastro de Alunos</h5>
-          <p class="card-text">Faça o cadastro dos alunos</p>
-          <a href="#" class="btn btn-outline-primary">Ir para Cadastro</a>
-        </div>
-    </div>
     -->
+
+    <section class="container">
+        <div class="row">
+            <div class="card card border-success mb-3" style="width: 16rem">
+                <img class="card-img-top" src="./img/cadastro-icone.jpg" alt="Imagem de Capa do Card" title="Cadastro">
+                <div class="card-body">
+                    <h5 class="card-title">Fazer o Cadastro</h5>
+                    <div class="btn-group">
+                        <a>
+                            <button type="button" class="btn btn-outline-success">Cadastrar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            <div class="card card border-primary mb-3" style="width: 16rem">
+                <img class="card-img-top" src="./img/consulta.png" alt="Imagem de Capa do Card" title="Consulta">
+                <div class="card-body">
+                    <h5 class="card-title">Realizar Consulta de Dados</h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Consultar
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="consulta.php">Consulta de Todos os dados</a>
+                          <a class="dropdown-item" href="info/consultaInfo.php">Etim Infoweb</a>
+                          <a class="dropdown-item" href="adm/consultaAdm.php">Etim Adm</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="">Link separado</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card card border-info mb-3" style="width: 16rem">
+                <img class="card-img-top" src="./img/alterar.png" alt="Imagem de Capa do Card" title="Alterar">
+                <div class="card-body">
+                    <h5 class="card-title">Alterar Registro</h5>
+                    <div class="btn-group">
+                        <a>
+                            <button type="button" class="btn btn-outline-info">Modificar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card card border-danger mb-3" style="width: 16rem">
+                    <img class="card-img-top" src="./img/escluir.png" alt="Imagem de Capa do Card" title="Deletar">
+                    <div class="card-body">
+                        <h5 class="card-title">Excluir Registro</h5>
+                        <div class="btn-group">
+                            <a>
+                                <button type="button" class="btn btn-outline-danger">Excluir</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>    
+        </section>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
