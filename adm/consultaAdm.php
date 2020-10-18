@@ -3,7 +3,7 @@
     require_once '../conexao.php';
     require_once '../head.php';
     require_once 'navbar.php';
-    require_once '../pesquisa.php';
+    //require_once '../pesquisa.php';
 
     $sql = "SELECT * FROM alunos WHERE curso = 'ETIM ADMNISTRAÇÃO'";
     $query = mysqli_query($conexao, $sql);

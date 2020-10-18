@@ -2,7 +2,6 @@
 
     include_once 'conexao.php';
     include_once 'head.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +10,8 @@
     <title>Página Inicial </title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body class="body">
-<div class="container-fluid">
+<body class="body" style="background-image: url(img/london.jpg);">
+<div class="container-fluid corpo">
     <section>
         <div class="fixed-top">
             <div class="collapse" id="navbarToggleExternalContent">
@@ -73,15 +72,26 @@
     </center>
     <br>
     -->
+    <!--section class="container-fluid">
+            <div class="jumbotron">
+                <h1 class="display-4">Sistema de Controle de Entrada e Saída</h1>
+                <p class="lead"> Sistema Administrativo</p>
+                <hr class="my-4">
+                <p>Cadastro | Consulta | Exclusão | Atualização de Dados</p><br>
+                <a href="pesquisa.php">
+                    <button type="button" class="btn btn-outline-primary">Pesquisar</button>
+                </a>
+            </div>
+    </section-->
 
     <section class="container">
         <div class="row">
             <div class="card card border-success mb-3" style="width: 16rem">
-                <img class="card-img-top" src="./img/cadastro-icone.jpg" alt="Imagem de Capa do Card" title="Cadastro">
+                <img class="card-img-top" src="./img/cadastro-icone.jpg" alt="Imagem de Capa do Card" title="Cadastro" style="width: 200px; height: 200px; margin: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Fazer o Cadastro</h5>
                     <div class="btn-group">
-                        <a>
+                        <a href="cadastro.php">
                             <button type="button" class="btn btn-outline-success">Cadastrar</button>
                         </a>
                     </div>
@@ -90,7 +100,7 @@
 
             <div class="row">
             <div class="card card border-primary mb-3" style="width: 16rem">
-                <img class="card-img-top" src="./img/consulta.png" alt="Imagem de Capa do Card" title="Consulta">
+                <img class="card-img-top" src="./img/consulta.png" alt="Imagem de Capa do Card" title="Consulta" style="width: 200px; height: 200px; margin: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Realizar Consulta de Dados</h5>
                     <div class="btn-group">
@@ -101,8 +111,6 @@
                           <a class="dropdown-item" href="consulta.php">Consulta de Todos os dados</a>
                           <a class="dropdown-item" href="info/consultaInfo.php">Etim Infoweb</a>
                           <a class="dropdown-item" href="adm/consultaAdm.php">Etim Adm</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="">Link separado</a>
                         </div>
                       </div>
                 </div>
@@ -111,11 +119,11 @@
 
         <div class="row">
             <div class="card card border-info mb-3" style="width: 16rem">
-                <img class="card-img-top" src="./img/alterar.png" alt="Imagem de Capa do Card" title="Alterar">
+                <img class="card-img-top" src="./img/alterar.png" alt="Imagem de Capa do Card" title="Alterar" style="width: 200px; height: 200px; margin: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Alterar Registro</h5>
                     <div class="btn-group">
-                        <a>
+                        <a href="atualizar.php">
                             <button type="button" class="btn btn-outline-info">Modificar</button>
                         </a>
                     </div>
@@ -124,11 +132,11 @@
 
             <div class="row">
                 <div class="card card border-danger mb-3" style="width: 16rem">
-                    <img class="card-img-top" src="./img/escluir.png" alt="Imagem de Capa do Card" title="Deletar">
+                    <img class="card-img-top" src="./img/escluir.png" alt="Imagem de Capa do Card" title="Deletar" style="width: 200px; height: 200px; margin: auto;">
                     <div class="card-body">
                         <h5 class="card-title">Excluir Registro</h5>
                         <div class="btn-group">
-                            <a>
+                            <a href="deletar.php">
                                 <button type="button" class="btn btn-outline-danger">Excluir</button>
                             </a>
                         </div>
@@ -136,7 +144,6 @@
                 </div>
         </div>    
         </section>
-
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
