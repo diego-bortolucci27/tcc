@@ -17,11 +17,26 @@
     <title>Consulta</title>
 </head>
 <body>
+<div class="container-fluid">
     <div>
         <center>
-            <h1 class="titulo"><b>Funcionários<b></h1>
+            <h1 class="titulo"><b>Consulta de Dados - Funcionários<b></h1>
         </center>
     </div>
+    <center>
+        <form action="busca.php" method="POST">
+            <div class="form-group col-md-6">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Função</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="consultaFuncionario.php">Funcionários</a>
+                        <a class="dropdown-item" href="consultaPublica.php">Alunos</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </center>
     <div class="table-responsive">
         <table class="table">
             <thead class="bg-danger">
@@ -52,5 +67,6 @@
             ?>
         </table>
     </div>
+</div>
 </body>
 </html>

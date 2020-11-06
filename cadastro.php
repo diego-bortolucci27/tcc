@@ -2,19 +2,49 @@
 
     require_once 'head.php';
     require_once 'navbar.php';
+    session_start();
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Cadastro de Alunos</title>
+    <title>Novo Aluno</title>
     <link rel="stylesheet" href="css/cadastro.css">
+
+  <style> 
+
+    label{
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    .nolabel{
+      font-weight: normal;
+      font-size: 15px;
+    }
+
+  </style>
+
 </head>
 <body class="body">
-    <div class="principal container-fluid">
-        <h1 style="color: black; font-size: 16pt; margin: 15px;"><b>Cadastro dos Alunos</b></h1>
+    <div class="principal container-fluid" align="center" style="padding: 20px 0px;">
+        <h1 style="color: black; font-size: 16pt; margin: 15px;"><b>Novo Aluno</b></h1>
         <br>
+    <?php
+		if(isset($_SESSION['msg'])){
+			echo $_SESSION['msg'];
+			unset($_SESSION['msg']);
+		}
+		?>
     <form action="inserir.php" method="POST">
+        <br>
+        <div class="input-group col-md-6">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile02" name="arquivo">
+            <label class="nolabel custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02" align=left>Escolha o Arquivo</label>
+          </div>
+        </div>
+        <br>
         <div class="form-group col-md-6">
             <label style="color: black;" for="rm">RM</label>
             <input type="number" class="form-control" id="rm" name="rm" placeholder="EX: 17170">
@@ -35,15 +65,15 @@
         </div>
         <div class="form-group col-md-6">
           <label style="color: black;" for="curso">Curso</label>
-          <div class="form-check">
+          <div class="form-check" align="left">
             <input class="form-check-input" type="radio" name="curso" id="curso" value="ETIM INFOWEB">
-              <label class="form-check-label" for="info" style="color: black;">
+              <label class="nolabel form-check-label" for="info" style="color: black;">
                 ETIM INFOWEB
               </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" align="left">
             <input class="form-check-input" type="radio" name="curso" id="curso" value="ETIM ADMNISTRAÇÃO">
-              <label class="form-check-label" for="adm" style="color: black;">
+              <label class="nolabel form-check-label" for="adm" style="color: black;">
                 ETIM ADM
               </label>
           </div>

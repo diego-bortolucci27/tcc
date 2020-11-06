@@ -1,12 +1,12 @@
 <?php
 
   require_once 'head.php';
-  require_once 'conexao.php';
   require_once 'navbar.php';
+  require_once 'conexao.php';
 
-  $rm = $_GET['rm'];
+  $rm = $_POST['rm'];
 
-  $sql = "SELECT * FROM alunos WHERE rm = $rm";
+  $sql = "SELECT * FROM alunos WHERE rm='$rm'";
   $query = mysqli_query($conexao, $sql);
 
   while($row = mysqli_fetch_array($query))
@@ -35,21 +35,19 @@
     <center>
       <h1 class="titulo"><b>Alterar Cadastro</b></h1>
     </center>
-    <form action="update.php" method="POST">
-        <div class="form-group col-md-6">
-            <input type="hidden" class="form-control" id="rm" name="rm" aria-describedby="emailHelp" placeholder="EX:99999" value="<?php echo $rm; ?>">
-          </div>
+    <form action="processaUpdate.php" method="POST">
         <div class="form-group col-md-6">
             <label for="nome">Nome Completo</label>
-            <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp" placeholder="Digite o Nome Completo" value="<?php echo $nome; ?>">
+            <input type="hidden" name="rm" value="<?php echo $rm; ?>">
+            <input type="text" value="<?php echo $nome; ?>" name="nome1">
           </div>
           <div class="form-group col-md-4">
             <label for="serie">Série</label>
-            <input type="text" class="form-control" id="serie" name="serie" placeholder="Ex: 3º Ano" value="<?php echo $serie; ?>">
+            <input type="text" class="form-control" id="serie" name="serie1" placeholder="<?php echo $serie; ?>" value="<?php echo $serie; ?>">
           </div>
           <div class="form-group col-md-4">
             <label for="curso">Curso</label>
-            <input type="text" class="form-control" id="curso" name="curso" placeholder="Ex: Etim Infoweb" value="<?php echo $curso; ?>">
+            <input type="text" class="form-control" id="curso" name="curso" placeholder="<?php echo $curso; ?>" value="<?php echo $curso; ?>">
           </div>
           <div class="form-group col-md-6">
               <label for="telefone">Telefone</label>

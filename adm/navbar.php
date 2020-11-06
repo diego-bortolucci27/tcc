@@ -6,22 +6,16 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" style="color: white;" href="../consulta.php">Consultar <span class="sr-only">(Página atual)</span></a>
+        <a class="nav-link" style="color: white;" href="../consultaPublica.php">Consultar <span class="sr-only">(Página atual)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" style="color: white;" href="../pesquisa.php">Pesquisar</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: white;" href="../cadastro.php">Cadastrar</a>
+        <a class="nav-link" style="color: white;" href="../controle.php">Controle</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-          Cursos
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="consultaAdm.php">Etim ADM</a>
-          <a class="dropdown-item" href="../info/consultaInfo.php">Etim Infoweb</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" style="color: white;" href="../ajuda.php">Ajuda</a>
       </li>
     </ul>
   </div>

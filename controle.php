@@ -20,7 +20,7 @@
 <body>
     <div>
         <center>
-            <h1 class="titulo"><b>Consulta de Dados - Alunos<b></h1>
+            <h1 class="titulo"><b>Alunos<b></h1>
         </center>
     </div>
     <div>

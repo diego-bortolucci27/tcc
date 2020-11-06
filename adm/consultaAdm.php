@@ -18,10 +18,25 @@
     <title>Consulta</title>
 </head>
 <body>
+<div class="container-fluid">
     <div>
         <center>
             <h1 class="titulo"><b>Consulta de Dados - ETIM ADMINISTRAÇÃO<b></h1>
         </center>
+        <center>
+        <form action="busca.php" method="POST">
+            <div class="form-group col-md-6">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Função</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../consultaFuncionario.php">Funcionários</a>
+                        <a class="dropdown-item" href="../consultaPublica.php">Alunos</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </center>
     </div>
     <div>
         <div class="btn-group">
@@ -36,10 +51,7 @@
             <a class="dropdown-item" href="consultaAdm.php">Ver ETIM ADM</a>
             <a class="dropdown-item" href="../info/consultaInfo.php">Ver ETIM INFO</a>
         </div>
-        </div>
-        </div>
     </div>
-</div>
     </div>
     <div class="table-responsive">
         <table class="table">
@@ -85,5 +97,6 @@
             ?>
         </table>
     </div>
+</div>
 </body>
 </html>

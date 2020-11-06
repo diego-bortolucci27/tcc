@@ -1,15 +1,11 @@
 <?php
 
-require_once "head.php";
-require_once "conexao.php";
-require_once 'navbar.php';
+    require_once 'conexao.php';
+    require_once 'head.php';
+    require_once 'navbar.php';
 
-$busca = $_POST['busca'];
-var_dump($busca);
-
-$sql = "SELECT * FROM alunos WHERE RM = '$busca'";
-$query = mysqli_query($conexao, $sql);
-
+    $sql = "SELECT * FROM alunos";
+    $query = mysqli_query($conexao, $sql);
 ?>
 
 <!DOCTYPE html>
@@ -18,20 +14,26 @@ $query = mysqli_query($conexao, $sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/consulta.css">
-    <title>Busca</title>
+    <title>Consulta</title>
 </head>
 <body>
+<div class="container-fluid">
     <div>
         <center>
-            <h1 class="titulo"><b>Resultado da Pesquisa<b></h1>
+            <h1 class="titulo"><b>Consulta de Dados - Alunos<b></h1>
         </center>
     </div>
     <center>
-        <form action="buscaRm.php" method="POST">
+        <form action="busca.php" method="POST">
             <div class="form-group col-md-6">
-                <label for="busca">Pesquisar</label>
-                <input type="number" class="form-control" id="busca" name="busca" placeholder="Digite o RM do aluno"><br>
-                <input type="submit" value="Pesquisar" class="btn btn-primary">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Função</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="consultaFuncionario.php">Funcionários</a>
+                        <a class="dropdown-item" href="consultaPublica.php">Alunos</a>
+                    </div>
+                </div>
             </div>
         </form>
     </center>
@@ -41,12 +43,12 @@ $query = mysqli_query($conexao, $sql);
                 Curso
             </button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="consultaAdm.php">Ver ETIM ADM</a>
-                <a class="dropdown-item" href="consultaInfo.php">Ver ETIM INFO</a>
+                <a class="dropdown-item" href="adm/consultaAdm.php">Ver ETIM ADM</a>
+                <a class="dropdown-item" href="info/consultaInfo.php">Ver ETIM INFO</a>
+            </div>
         </div>
     </div>
-</div>
-    </div>
+
     <div class="table-responsive">
         <table class="table">
             <thead class="bg-danger">
@@ -87,9 +89,7 @@ $query = mysqli_query($conexao, $sql);
             ?>
         </table>
     </div>
-    <script src="web/javaScript/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</div>
+
 </body>
 </html>

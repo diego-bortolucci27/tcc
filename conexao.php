@@ -1,6 +1,6 @@
 <?php
 
-    $conexao = mysqli_connect('127.0.0.1', 'root', '', 'sistema');
+    $conexao = mysqli_connect('localhost', 'root', '', 'sistema');
 
     if (!$conexao)
         echo "<script> alert('Não foi possível conectar ao Banco de Dados!') </script>";
