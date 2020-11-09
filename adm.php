@@ -24,9 +24,33 @@
         </center>
     </div>
     <div class="container" style="padding: 40px;">
-        <a href="cadastro.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao">Adicionar Novo</button></a>
+        <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" data-toggle="modal" data-target="#staticBackdrop">
+        Adicionar Novo
+        </button>
+
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Adicionar Novo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="cadastroAluno.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Novo Aluno</button></a>
+                        <br>
+                        <a href="cadastroFuncionario.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Novo Funcionário</button></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <br>
-        <a href="infoUpdate.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Exibir Cadastros</button></a>
+        <a href="consultaAlunoAdmin.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Exibir Cadastros</button></a>
         <br>
         <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Gerar relatórios</button>
     </div>

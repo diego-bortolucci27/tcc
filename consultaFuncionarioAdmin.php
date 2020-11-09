@@ -30,8 +30,8 @@
                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Função</button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="consultaFuncionario.php">Funcionários</a>
-                        <a class="dropdown-item" href="consultaAluno.php">Alunos</a>
+                        <a class="dropdown-item" href="consultaFuncionarioAdmin.php">Funcionários</a>
+                        <a class="dropdown-item" href="consultaAlunoAdmin.php">Alunos</a>
                     </div>
                 </div>
             </div>
@@ -46,6 +46,8 @@
                 <th scope="col">Função</th>
                 <th scope="col">Email</th>
                 <th scope="col">Senha</th>
+                <th scope="col">Excluir</th>
+                <th scope="col">Alterar</th>
             </tr>
             </thead>
             <?php
@@ -60,6 +62,8 @@
 				    <td class="table-active"> <?php echo $row['funcao']; ?> </td>
                     <td class="table-active"> <?php echo $row['email']; ?> </td>
                     <td class="table-active"> <?php echo $row['senha']; ?> </td>
+                    <td class="table-active"><a href="delete.php?rm=<?php echo $row['rm']; ?>">Excluir</a></td>
+                    <td class="table-active"><a href="alterar.php?rm=<?php echo $row['rm'];?>">Alterar</a></td>
 			    </tr>
             </tbody>
             <?php

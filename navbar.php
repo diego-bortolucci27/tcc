@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" style="color: white;" href="consultaPublica.php">Consultar <span class="sr-only">(Página atual)</span></a>
+        <a class="nav-link" style="color: white;" href="consultaAluno.php">Consultar <span class="sr-only">(Página atual)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" style="color: white;" href="pesquisa.php">Pesquisar</a>

@@ -31,7 +31,7 @@
                 Função</button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="../consultaFuncionario.php">Funcionários</a>
-                        <a class="dropdown-item" href="../consultaPublica.php">Alunos</a>
+                        <a class="dropdown-item" href="../consultaAluno.php">Alunos</a>
                     </div>
                 </div>
             </div>

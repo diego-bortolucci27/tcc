@@ -27,9 +27,29 @@
     $query = mysqli_query($conexao, $sql);
 
     if($query){
-        echo "Cadastro modificado com sucesso";
+?>
+
+    <script>
+
+        window.alert('Cadastro Alterado com sucesso!');
+        document.location.href = 'consultaAlunoAdmin.php';
+
+    </script>
+
+<?php
+
     }else{
-        echo "Não foi possivel modificar o cadastro";
+
+?>
+    <script>
+
+        window.alert('O cadastro não pode ser alterado!');
+        document.location.href = 'dadosUpdateAluno.php';
+
+    </script>
+
+<?php
+
     }
 
 ?>

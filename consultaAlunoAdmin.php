@@ -26,9 +26,14 @@
     <center>
         <form action="busca.php" method="POST">
             <div class="form-group col-md-6">
-                <label for="busca">Pesquisar</label>
-                <input type="text" class="form-control" id="busca" name="busca" placeholder="Digite o nome completo"><br>
-                <input type="submit" value="Pesquisar" class="btn btn-primary">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Função</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="consultaFuncionarioAdmin.php">Funcionários</a>
+                        <a class="dropdown-item" href="consultaAlunoAdmin.php">Alunos</a>
+                    </div>
+                </div>
             </div>
         </form>
     </center>
@@ -43,7 +48,6 @@
             </div>
         </div>
     </div>
-
     <div class="table-responsive">
         <table class="table">
             <thead class="bg-danger">
@@ -80,7 +84,7 @@
                     <td class="table-active"> <?php echo $row['email_Responsavel']; ?> </td>
                     <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
                     <td class="table-active"><a href="delete.php?rm=<?php echo $row['rm'] ?>">Excluir</a></td>
-                    <td class="table-active"><a href="alterar.php?rm=<?php echo $row['rm'];?>">Alterar</a></td>
+                    <td class="table-active"><a href="dadosUpdateAluno.php?rm=<?php echo $row['rm'];?>">Alterar</a></td>
 			    </tr>
             </tbody>
             <?php

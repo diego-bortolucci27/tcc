@@ -1,14 +1,32 @@
 <?php
 
-    require_once 'head.php';
-    require_once 'navbar.php';
-    session_start();
+  require_once 'head.php';
+  require_once 'navbar.php';
+  require_once 'conexao.php'; 
+
+  $rm = $_GET['rm'];
+
+  $sql = "SELECT * FROM alunos WHERE rm='$rm'";
+  $query = mysqli_query($conexao, $sql);
+
+  while($row = mysqli_fetch_array($query))
+  {
+    $nome = $row['nome'];
+    $serie = $row['serie'];
+    $curso = $row['curso'];
+    $telefone = $row['telefone'];
+    $email = $row['email'];
+    $nome_responsavel = $row['nome_responsavel'];
+    $telefone_responsavel = $row['telefone_responsavel'];
+    $email_responsavel = $row['email_Responsavel'];
+  }
+
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Novo Aluno</title>
+    <title>Atualizar Cadastro</title>
     <link rel="stylesheet" href="css/cadastro.css">
 
   <style> 
@@ -25,33 +43,43 @@
 
   </style>
 
+<script type="text/javascript">
+		function mascara(i,t){
+
+			var v = i.value;
+
+			if(isNaN(v[v.length-1])){
+				i.value = v.substring(0, v.length-1);
+				return;
+			}
+
+			if(t === "cel"){
+				if (v.length === 1) i.value = "(" + i.value;
+				if (v.length === 3) i.value += ") ";
+				if(v[5] == 10){
+					i.setAttribute("maxlength", "16");
+					if (v.length === 11) i.value += "-";
+				}else{
+					i.setAttribute("maxlength", "15");
+					if (v.length === 10) i.value += "-";
+				}
+			}
+		}		
+
+	</script>
+
 </head>
 <body class="body">
     <div class="principal container-fluid" align="center" style="padding: 20px 0px;">
-        <h1 style="color: black; font-size: 16pt; margin: 15px;"><b>Novo Aluno</b></h1>
+        <h1 style="color: black; font-size: 16pt; margin: 15px;"><b>Atualizar Cadastro - Aluno</b></h1>
         <br>
-    <?php
-		if(isset($_SESSION['msg'])){
-			echo $_SESSION['msg'];
-			unset($_SESSION['msg']);
-		}
-		?>
-    <form action="inserir.php" method="POST">
-        <br>
-        <div class="input-group col-md-6">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile02" name="arquivo">
-            <label class="nolabel custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02" align=left>Escolha o Arquivo</label>
-          </div>
-        </div>
+    
+    <form action="processaUpdateAluno.php" method="POST">
         <br>
         <div class="form-group col-md-6">
-            <label style="color: black;" for="rm">RM</label>
-            <input type="number" class="form-control" id="rm" name="rm" placeholder="EX: 17170">
-        </div>
-        <div class="form-group col-md-6">
+          <input type="hidden" name="rm" value="<?php echo $rm ?>">
           <label style="color: black;" for="nome">Nome Completo</label>
-          <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp" placeholder="EX: Luís Eduardo Santos">
+          <input type="text" class="form-control" id="nome" name="nome" value="<?php echo $nome ?>">
         </div>
         <div class="form-group col-md-6">
           <label style="color: black;" for="serie">Série</label>
@@ -79,26 +107,26 @@
           </div>
         </div>
         <div class="form-group col-md-6">
-            <label style="color: black;" for="telefone">Telefone</label>
-            <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Ex: (19)99999-9999">
+            <label style="color: black;" for="telefone">Celular</label>
+            <input oninput="mascara(this, 'cel')" type="text" class="form-control" id="telefone" name="telefone" value="<?php echo $telefone ?>">
         </div>
         <div class="form-group col-md-6">
           <label style="color: black;" for="email">Email</label>
-          <input type="text" class="form-control" id="email" name="email" placeholder="Ex: luis_santos@etec.sp.gov.br">
+          <input type="text" class="form-control" id="email" name="email" value="<?php echo $email ?>">
         </div>
         <div class="form-group col-md-6">
           <label style="color: black;" for="responsavel">Nome do Responsável</label>
-          <input type="text" class="form-control" id="responsavel" name="responsavel" aria-describedby="emailHelp" placeholder="Ex: Antônio Lopes Cardoso">
+          <input type="text" class="form-control" id="responsavel" name="responsavel" value="<?php echo $nome_responsavel ?>">
         </div>
         <div class="form-group col-md-6">
-            <label style="color: black;" for="telefoneResponsavel">Telefone Responsável</label>
-            <input type="number" class="form-control" id="telResponsavel" name="telResponsavel" placeholder="Ex: (19)99999-9999">
+            <label style="color: black;" for="telefoneResponsavel">Celular Responsável</label>
+            <input oninput="mascara(this, 'cel')" type="text" class="form-control" id="telResponsavel" name="telResponsavel" value="<?php echo $telefone_responsavel ?>">
         </div>
         <div class="form-group col-md-6">
           <label style="color: black;" for="emailResponsavel">Email Responsável</label>
-          <input type="text" class="form-control" id="emailResponsavel" name="emailResponsavel" placeholder="Ex: antonio_cardoso@gmail.com">
+          <input type="text" class="form-control" id="emailResponsavel" name="emailResponsavel" value="<?php echo $email_responsavel ?>">
         </div>
-        <input type="submit" value="Cadastrar" class="btn btn-outline-primary">
+        <input type="submit" value="Atualizar" class="btn btn-outline-primary">
     </form>
     </div>
 
