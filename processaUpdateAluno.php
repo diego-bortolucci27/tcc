@@ -31,7 +31,7 @@
 
     <script>
 
-        window.alert('Cadastro Alterado com sucesso!');
+        window.alert('Cadastro alterado com sucesso!');
         document.location.href = 'consultaAlunoAdmin.php';
 
     </script>

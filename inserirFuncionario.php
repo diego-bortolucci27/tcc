@@ -11,7 +11,9 @@
   $email = $_POST['email'];
   $senha = $_POST['senha'];
 
-  $sql = "INSERT INTO funcionarios (id, senha, funcao, nome, email) VALUES ('$id', AES_ENCRYPT('$senha','decrypt'),'$funcao','$nome','$email')";
+  $senhaCrip = base64_encode($senha);
+
+  $sql = "INSERT INTO funcionarios (id, senha, funcao, nome, email) VALUES ('$id', '$senhaCrip','$funcao','$nome','$email')";
 
    $query = mysqli_query($conexao, $sql);
 

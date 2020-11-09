@@ -50,8 +50,34 @@
         </div>
 
         <br>
-        <a href="consultaAlunoAdmin.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Exibir Cadastros</button></a>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" data-toggle="modal" data-target="#staticBackdrop1">
+        Exibir Cadastros
+        </button>
+
+        <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Exibir Cadastros</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="consultaAlunoAdmin.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Alunos</button></a>
+                        <br>
+                        <a href="consultaFuncionarioAdmin.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Funcionários</button></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <br>
+
         <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Gerar relatórios</button>
     </div>
     

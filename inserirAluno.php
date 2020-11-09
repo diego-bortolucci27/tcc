@@ -30,12 +30,31 @@
 
    $query = mysqli_query($conexao, $sql);
 
-  if ($query)
-  {
-    echo "Cadastro realizado com sucesso";
-  }
-  else
-  {
-    echo "Não foi possível concluir o cadastro!";
-  }
-?>
+   if ($query){
+
+    ?>
+    
+        <script>
+    
+            window.alert('Cadastro realizado com sucesso!');
+            document.location.href = 'adm.php';
+    
+        </script>
+    
+    <?php
+    
+      }
+      else{
+    
+    ?>
+    
+        <script>
+    
+            window.alert('O cadastro não pode ser realizado!');
+            document.location.href = 'cadastroFuncionario.php';
+    
+        </script>
+    
+    <?php
+      }
+    ?>

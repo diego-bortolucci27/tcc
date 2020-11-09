@@ -43,8 +43,8 @@
                 Curso
             </button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="adm/consultaAdm.php">Ver ETIM ADM</a>
-                <a class="dropdown-item" href="info/consultaInfo.php">Ver ETIM INFO</a>
+                <a class="dropdown-item" href="adm/consultaAdmAdmin.php">Ver ETIM ADM</a>
+                <a class="dropdown-item" href="info/consultaInfoAdmin.php">Ver ETIM INFO</a>
             </div>
         </div>
     </div>
@@ -83,7 +83,7 @@
                     <td class="table-active"> <?php echo $row['telefone_responsavel']; ?> </td>
                     <td class="table-active"> <?php echo $row['email_Responsavel']; ?> </td>
                     <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
-                    <td class="table-active"><a href="delete.php?rm=<?php echo $row['rm'] ?>">Excluir</a></td>
+                    <td class="table-active"><a href="deleteAluno.php?rm=<?php echo $row['rm'] ?>">Excluir</a></td>
                     <td class="table-active"><a href="dadosUpdateAluno.php?rm=<?php echo $row['rm'];?>">Alterar</a></td>
 			    </tr>
             </tbody>

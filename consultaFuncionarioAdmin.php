@@ -62,8 +62,8 @@
 				    <td class="table-active"> <?php echo $row['funcao']; ?> </td>
                     <td class="table-active"> <?php echo $row['email']; ?> </td>
                     <td class="table-active"> <?php echo $row['senha']; ?> </td>
-                    <td class="table-active"><a href="delete.php?rm=<?php echo $row['rm']; ?>">Excluir</a></td>
-                    <td class="table-active"><a href="alterar.php?rm=<?php echo $row['rm'];?>">Alterar</a></td>
+                    <td class="table-active"><a href="deleteFuncionario.php?id=<?php echo $row['id']; ?>">Excluir</a></td>
+                    <td class="table-active"><a href="dadosUpdateFuncionario.php?id=<?php echo $row['id'];?>">Alterar</a></td>
 			    </tr>
             </tbody>
             <?php

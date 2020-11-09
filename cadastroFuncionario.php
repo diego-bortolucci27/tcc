@@ -10,19 +10,49 @@
     <title>Novo Funcionário</title>
     <link rel="stylesheet" href="css/cadastro.css">
 
-  <style> 
+    <style> 
 
-    label{
-      font-weight: bolder;
-      font-size: 20px;
-    }
+label{
+    font-weight: bolder;
+    font-size: 20px;
+}
 
-    .nolabel{
-      font-weight: normal;
-      font-size: 15px;
-    }
+.nolabel{
+    font-weight: normal;
+    font-size: 15px;
+}
 
-  </style>
+#input > * {
+  height: 1.3em;
+}
+
+#img {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: -35px;
+  margin-bottom: 20px;
+}
+
+</style>
+
+<script type="text/javascript">
+window.onload=function(){
+  var input = document.querySelector('#input');
+  var img = document.querySelector('#img');
+  var visivel = false;
+  img.addEventListener('mousedown', function () {
+    visivel = true;
+    input.type = 'text';
+  });
+  window.addEventListener('mouseup', function (e) {
+    if (visivel) visivel = !visivel;
+    input.type = 'password';
+  });
+}
+</script>
+
 
 </head>
 <body class="body">
@@ -51,8 +81,9 @@
           <input type="text" class="form-control" id="email" name="email" placeholder="Ex: luis_santos@etec.sp.gov.br">
         </div>
         <div class="form-group col-md-6">
-          <label style="color: black;" for="senha">Senha</label>
-          <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha">
+          <label style="color: black;" for="responsavel">Senha</label>
+          <input type="password" class="form-control" placeholder="Senha" required="required" minlength="10" maxlength="20" id="input" name="senha">
+          <img draggable="false" src="http://i.stack.imgur.com/H9Sb2.png" alt="" id="img" align="right">
         </div>
         <input type="submit" name="Cadastrar" value="Cadastrar" class="btn btn-outline-primary">
     </form>

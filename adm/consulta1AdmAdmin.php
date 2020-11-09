@@ -5,7 +5,7 @@
     require_once 'navbar.php';
 
     $sql = "SELECT * FROM alunos 
-    WHERE curso = 'ETIM INFOWEB' AND serie = '3º Ano'";
+    WHERE curso = 'ETIM ADMNISTRAÇÃO' AND serie = '1º Ano'";
     $query = mysqli_query($conexao, $sql);
 ?>
 
@@ -21,7 +21,7 @@
 <div class="container-fluid">
     <div>
         <center>
-            <h1 class="titulo"><b>Consulta de Dados - ETIM INFOWEB - 3º Ano<b></h1>
+            <h1 class="titulo"><b>Consulta de Dados - ETIM ADMINISTRAÇÃO - 1º Ano<b></h1>
         </center>
         <center>
         <form action="busca.php" method="POST">
@@ -30,8 +30,8 @@
                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Função</button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="../consultaFuncionario.php">Funcionários</a>
-                        <a class="dropdown-item" href="../consultaAluno.php">Alunos</a>
+                        <a class="dropdown-item" href="../consultaFuncionarioAdmin.php">Funcionários</a>
+                        <a class="dropdown-item" href="../consultaAlunoAdmin.php">Alunos</a>
                     </div>
                 </div>
             </div>
@@ -44,12 +44,12 @@
                 Série
             </button>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="consulta1Info.php">1º Ano</a>
-            <a class="dropdown-item" href="consulta2Info.php">2º Ano</a>
-            <a class="dropdown-item" href="consulta3Info.php">3º Ano</a>
+            <a class="dropdown-item" href="consulta1AdmAdmin.php">1º Ano</a>
+            <a class="dropdown-item" href="consulta2AdmAdmin.php">2º Ano</a>
+            <a class="dropdown-item" href="consulta3AdmAdmin.php">3º Ano</a>
         <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../adm/consultaAdm.php">Ver ETIM ADM</a>
-            <a class="dropdown-item" href="consultaInfo.php">Ver ETIM INFO</a>
+            <a class="dropdown-item" href="consultaAdmAdmin.php">Ver ETIM ADM</a>
+            <a class="dropdown-item" href="../info/consultaInfoAdmin.php">Ver ETIM INFO</a>
         </div>
     </div>
     </div>
@@ -67,6 +67,8 @@
                 <th scope="col">Tel Responsável</th>
                 <th scope="col">Email Responsável</th>
                 <th scope="col">Ver infos</th>
+                <th scope="col">Excluir</th>
+                <th scope="col">Alterar</th>
             </tr>
             </thead>
             <?php
@@ -86,6 +88,8 @@
                     <td class="table-active"> <?php echo $row['telefone_responsavel']; ?> </td>
                     <td class="table-active"> <?php echo $row['email_Responsavel']; ?> </td>
                     <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
+                    <td class="table-active"><a href="../deleteAluno.php?rm=<?php echo $row['rm'] ?>">Excluir</a></td>
+                    <td class="table-active"><a href="../dadosUpdateAluno.php?rm=<?php echo $row['rm'];?>">Alterar</a></td>
 			    </tr>
             </tbody>
             <?php
