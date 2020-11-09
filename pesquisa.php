@@ -1,7 +1,7 @@
 <?php
 
-    require_once "head.php";
-
+    require_once 'head.php';
+    require_once 'navbar.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,13 +20,14 @@
         </div>
         <div>
             <center>
-                <form action="busca.php" method="post">
+                <form action="processaPesquisa.php" method="post">
                     <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="busca" name="busca" placeholder="Digite o nome completo"><br>
+                        <input type="text" class="form-control" id="busca" name="busca" placeholder="Digite o nome ou RM"><br>
                         <input type="submit" value="Pesquisar" class="btn btn-primary">
                     </div>
                 </form>
             </center>
         </div>
     </div>
+</body>
 </html>

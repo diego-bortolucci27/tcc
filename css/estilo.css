@@ -9,4 +9,21 @@
     color: white;
 }
 
+.cabecalho
+{
+    color: black;
+    /*font-family: 'Finger Paint', cursive;*/
+    margin-top: 50px;
+    background: white;
+    opacity: 0.6;
+    padding: 10px;
+}
 
+.subtitulo
+{
+    color: black;
+    background: white;
+    opacity: 0.6;
+    /*font-family: 'Finger Paint', cursive;*/
+    /*font-family: 'Ceviche One'*/
+}
