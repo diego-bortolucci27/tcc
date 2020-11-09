@@ -15,14 +15,13 @@
      <title>Ajuda</title>
  </head>
  <body>
-     
   <!-- INFO 1 -->
 
   <div class="jumbotron jumbotron-fluid" style='background-color: #DC300B;'>
   <div class="container.fluid">
-    <h1 class="display-4" class="ajuda_sobre" style='text-align:center; color:white;'>Que tal nos conhecer melhor!</h1>
+    <h1 class="display-4" class="ajuda_sobre" style='text-align:center; color:white;'>Que tal nos conhecer melhor?!</h1>
     <h2 class="display-5" class="ajuda_sobre" style='text-align:left; color:white; margin-left: 40px;''>Sobre nós </h2>
-    <p class="lead" style='color:white; margin:25px;'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere voluptas accusamus sint maiores deleniti, doloremque similique, esse unde suscipit ducimus animi vero magni cumque obcaecati velit aliquam iusto eveniet illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, incidunt omnis optio sequi harum vel, inventore possimus cupiditate, quam placeat non tenetur eaque natus fuga quod molestiae officia consequuntur dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, distinctio reprehenderit nulla minus quisquam ea! Est laborum perspiciatis corrupti quidem numquam pariatur laudantium repudiandae animi aperiam vitae, ducimus quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, dolores. Quod eligendi ex nobis ducimus voluptate, cupiditate natus expedita fugiat similique! Quasi, earum! Amet saepe vel animi pariatur atque! Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque minima iste? Molestiae voluptatem explicabo possimus eos sequi alias est sed voluptatum dignissimos! Ex, iure sunt. In corrupti vero explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum omnis consequatur natus dolore culpa sit distinctio eos enim. Hic facilis cumque voluptas odit deleniti at beatae accusamus voluptatem earum libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, perferendis numquam? Iure quia libero itaque a! Amet doloremque culpa, eveniet ad labore est nostrum commodi cumque odio reiciendis voluptates quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus, facilis porro laborum labore laboriosam? Autem minima ab hic. Eos voluptatum quas delectus recusandae, aspernatur repellat error dolorum eveniet amet?</p>
+    <p class="lead" style='color:white; margin:25px;'>Olá, nos somos alunos do 3º Ano do modulo ETIM Informática para Internet na escola ETEC Prof Jadyr Salles, localizada em Porto Ferreira(SP). Nosso grupo tem por principal objetivo melhorar nossa escola, seja para aqueles que estudam nela, tanto para aqueles que vierem a estudar nela nos proximos anos. Com ajuda de uma equipe de professores altamente capacitados nos ajudando, seguimos buscando nossos objetivos com o maximo de empenho, enquanto tentamos a cada dia, ser a melhor versão de nós mesmos, com humildade e uma insaciavel sede de sempre estarmos mehorando tanto no profissional quanto no pessoal!</p>
   </div>
 </div>
 
@@ -30,8 +29,8 @@
 <section class="sobre_projeto"> 
   <div class="jumbotron jumbotron-fluid" style='background-color: white;'>
     <div class="container.fluid">
-      <h2 class="display-5" class="ajuda_sobre" style='text-align:left; color:#DC300B; margin-left: 40px;''>Sobre o projeto </h2>
-      <p class="lead" style='color:#DC300B; margin:25px;'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere voluptas accusamus sint maiores deleniti, doloremque similique, esse unde suscipit ducimus animi vero magni cumque obcaecati velit aliquam iusto eveniet illo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, incidunt omnis optio sequi harum vel, inventore possimus cupiditate, quam placeat non tenetur eaque natus fuga quod molestiae officia consequuntur dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, distinctio reprehenderit nulla minus quisquam ea! Est laborum perspiciatis corrupti quidem numquam pariatur laudantium repudiandae animi aperiam vitae, ducimus quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, dolores. Quod eligendi ex nobis ducimus voluptate, cupiditate natus expedita fugiat similique! Quasi, earum! Amet saepe vel animi pariatur atque! Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque minima iste? Molestiae voluptatem explicabo possimus eos sequi alias est sed voluptatum dignissimos! Ex, iure sunt. In corrupti vero explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum omnis consequatur natus dolore culpa sit distinctio eos enim. Hic facilis cumque voluptas odit deleniti at beatae accusamus voluptatem earum libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, perferendis numquam? Iure quia libero itaque a! Amet doloremque culpa, eveniet ad labore est nostrum commodi cumque odio reiciendis voluptates quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus, facilis porro laborum labore laboriosam? Autem minima ab hic. Eos voluptatum quas delectus recusandae, aspernatur repellat error dolorum eveniet amet?</p>
+      <h2 class="display-5" class="ajuda_sobre" style='text-align:left; color:#DC300B; margin-left: 40px;'>Sobre o projeto </h2>
+      <p class="lead" style='color:#DC300B; margin:25px;'>Como ja dito anteriormente, nosso grupo tem como objetivo melhorar cada vez mais nossa escola, e é claro que isso se refletiria nos nossos projetos! O Sistema de Controle de Entrada e Saída dos alunos, tem por principal objetivo melhorar a segurança da escola para alunos que a frequentam e também para o conforto dos pais, pois com esse sistema, eles saberão a hora exata em que os filhos entram e saem da escola através de uma mensagem de texto que sera enviada para os mesmos. O projeto também auxiliará os funcionarios da escola, com a possibilidade de obter um relatório com as informações de entrada e saido dos alunos</p>
     </div>
   </div>
 </section>
@@ -42,20 +41,20 @@
         </div>
             <!-- tabela --> 
      <section>       
-    <section class="tabela" style='width: 450px;height:350px; margin-left: 20px; margin-top: 5px; float:left;'>  
+    <section class="tabela" style='width: 450px;height:350px; margin-left: 25px; margin-top: -30px; float:left;'>  
     <table class="table" style='color:white'>
   <tbody>
     <tr>
       <th scope="row">Diego Lopes Bortolucci</th>
-      <td>email@merkadinho</td>
+      <td>bortolucci.diego@gmail.com</td>
     </tr>
     <tr>
       <th scope="row">Filipi Henrique Pérez</th>
-      <td>email@filipi</td>
+      <td>hueh109@gmail.com</td>
     </tr>
     <tr>
       <th scope="row">Marcus Andreoli</th>
-      <td>email@marcus</td>
+      <td>marcus.vinicius2002@hotmail.com</td>
     </tr>
     <tr>
       <th scope="row">Viniciús Gabriel Freitas</th>
@@ -63,7 +62,7 @@
     </tr>
     <tr>
       <th scope="row">Vitor Ádrian Vieira</th>
-      <td>email@vitão</td>
+      <td>addrianvitor99@gmail.com</td>
     </tr>
   </tbody>
 </table>
@@ -76,7 +75,7 @@
 
         <!-- Info Escola-->
 
-          <section class="info_escola" style='float: right; margin-top:7px; margin-right: 55px;'> 
+          <section class="info_escola" style='float: right; margin-top:-15px; margin-right: 55px;'> 
           <section class="tabela" style='width: 450px;height:350px; margin-left: 20px;'>  
     <table class="table" style='color:white'>
   <tbody>
@@ -84,10 +83,11 @@
       <th scope="row" style="text-align: center;">ETEC PROF. JADYR SALLES</th>
     </tr>
     <tr>
-      <th scope="row" style="text-align: center;">Endereço Escola</th>
+      <th scope="row" style="text-align: center;">Av. Prof. Henrique da M. F. Jr., nº 849 - Centro, Porto Ferreira - SP, 13660-000
+</th>
     </tr>
     <tr>
-      <th scope="row" style="text-align: center;">NUMERO ESCOLA</th>
+      <th scope="row" style="text-align: center;">Tel: (19) 3589-1732</th>
     </tr>
     <tr>
       <th scope="row" style="text-align: center;">3º ETIM INFORMÁTICA PARA INTERNET</th>
