@@ -4,16 +4,16 @@
   require_once 'head.php';
   require_once 'navbar.php';
 
-  $rm = $_POST['rm'];
+  $rm = $_GET['rm'];
   $digital = "456";
-  $nome = $_POST['nome'];
-  $serie = $_POST['serie'];
-  $curso = $_POST['curso'];
-  $telefone = $_POST['telefone'];
-  $email = $_POST['email'];
-  $nome_responsavel = $_POST['responsavel'];
-  $telefone_responsavel = $_POST['telResponsavel'];
-  $email_responsavel = $_POST['emailResponsavel'];
+  $nome = $_GET['nome'];
+  $serie = $_GET['serie'];
+  $curso = $_GET['curso'];
+  $telefone = $_GET['telefone'];
+  $email = $_GET['email'];
+  $nome_responsavel = $_GET['responsavel'];
+  $telefone_responsavel = $_GET['telResponsavel'];
+  $email_responsavel = $_GET['emailResponsavel'];
 
   $sql = "INSERT INTO alunos (rm, digital, nome, serie, curso, telefone, email, nome_responsavel, telefone_responsavel, email_Responsavel)VALUES (
   '$rm',
@@ -51,7 +51,7 @@
         <script>
     
             window.alert('O cadastro não pode ser realizado!');
-            document.location.href = 'cadastroFuncionario.php';
+            document.location.href = 'cadastroAluno.php';
     
         </script>
     

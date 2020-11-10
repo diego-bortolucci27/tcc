@@ -5,11 +5,11 @@
   require_once 'navbar.php';
 
 
-  $nome = $_POST['nome'];
-  $id = $_POST['id'];
-  $funcao = $_POST['funcao'];
-  $email = $_POST['email'];
-  $senha = $_POST['senha'];
+  $nome = $_GET['nome'];
+  $id = $_GET['id'];
+  $funcao = $_GET['funcao'];
+  $email = $_GET['email'];
+  $senha = $_GET['senha'];
 
   $senhaCrip = base64_encode($senha);
 

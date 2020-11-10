@@ -2,7 +2,7 @@
 
     require_once 'head.php';
     require_once 'navbar.php';
-    session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +11,13 @@
     <title>Novo Aluno</title>
     <link rel="stylesheet" href="css/cadastro.css">
 
-  <style> 
+  <style>
+
+    .titulo{
+      color: #000;
+      font-size: 27px;
+      font-weight: bolder;
+    } 
 
     label{
       font-weight: bolder;
@@ -26,7 +32,8 @@
   </style>
 
 <script type="text/javascript">
-		function mascara(i,t){
+    
+    function mascara(i,t){
 
 			var v = i.value;
 
@@ -56,7 +63,22 @@
         <h1 style="color: black; font-size: 16pt; margin: 15px;"><b>Novo Aluno</b></h1>
         <br>
     
-    <form action="inserirAluno.php" method="POST">
+    <form action="inserirAlunoCsv.php" method="POST" enctype="multipart/form-data">
+    <h1 class="titulo">Adicionar por arquivo .csv</h1>  
+      <br>
+        <div class="form-group input-group col-md-6">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="file" id="inputGroupFile02">
+            <label class="nolabel custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02" align="left" style="color: black">Escolha o arquivo</label>
+          </div>
+        </div>
+        <input type="submit" value="Enviar" class="btn btn-outline-primary">
+    </form>
+
+    <br>
+
+    <form action="inserirAlunoManual.php" method="GET">
+    <h1 class="titulo" style="margin-top: 25px">Adicionar manualmente</h1>
         <br>
         <div class="form-group col-md-6">
             <label style="color: black;" for="rm">RM</label>
@@ -115,6 +137,10 @@
     </form>
     </div>
 
+
+<script src="./Depd/jquery.slim.min.js"></script>
+<script src="./Depd/popper.min.js"></script>
+<script src="./Depd/bootstrap.min.js"></script>
 
 <script src="web/javaScript/script.js"></script>
 

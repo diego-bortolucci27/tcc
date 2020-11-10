@@ -12,6 +12,12 @@
 
     <style> 
 
+.titulo{
+      color: #000;
+      font-size: 27px;
+      font-weight: bolder;
+} 
+
 label{
     font-weight: bolder;
     font-size: 20px;
@@ -59,10 +65,23 @@ window.onload=function(){
     <div class="principal container-fluid" align="center" style="padding: 20px 0px;">
         <h1 style="color: black; font-size: 16pt; margin: 15px;"><b>Novo Funcionário</b></h1>
         <br>
-    
-    <form action="inserirFuncionario.php" method="POST">
+
+    <form action="inserirFuncionarioCsv.php" method="POST" enctype="multipart/form-data">
+      <h1 class="titulo">Adicionar por arquivo .csv</h1>  
         <br>
-        <input type="hidden" name="id" value="">
+        <div class="form-group input-group col-md-6">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="file" id="inputGroupFile02">
+            <label class="nolabel custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02" align="left" style="color: black">Escolha o arquivo</label>
+          </div>
+        </div>
+        <input type="submit" value="Enviar" class="btn btn-outline-primary">
+    </form>
+
+    
+    <form action="inserirFuncionarioManual.php" method="GET">
+    <h1 class="titulo" style="margin-top: 50px">Adicionar manualmente</h1>
+        <input type="hidden" name="id" value="" style="height: 1px;">
         <br>
         <div class="form-group col-md-6">
           <label style="color: black;" for="nome">Nome Completo</label>
