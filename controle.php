@@ -45,7 +45,6 @@
                 <th scope="col">Curso</th>
                 <th scope="col">Entrada</th>
                 <th scope="col">Saída</th>
-                <th scope="col">Ver infos</th>
             </tr>
             </thead>
             <?php
@@ -61,7 +60,6 @@
                     <td class="table-active"> <?php echo $row['curso']; ?> </td>
                     <td class="table-active"> <?php echo $row['entrada']; ?> </td>
                     <td class="table-active"> <?php echo $row['saida']; ?> </td>
-                    <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
 			    </tr>
             </tbody>
             <?php

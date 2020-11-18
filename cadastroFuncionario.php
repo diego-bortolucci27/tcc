@@ -75,7 +75,7 @@ window.onload=function(){
             <label class="nolabel custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02" align="left" style="color: black">Escolha o arquivo</label>
           </div>
         </div>
-        <input type="submit" value="Enviar" class="btn btn-outline-primary">
+        <input type="submit" value="Enviar" class="btn btn-outline-danger">
     </form>
 
     
@@ -104,7 +104,7 @@ window.onload=function(){
           <input type="password" class="form-control" placeholder="Senha" required="required" minlength="10" maxlength="20" id="input" name="senha">
           <img draggable="false" src="http://i.stack.imgur.com/H9Sb2.png" alt="" id="img" align="right">
         </div>
-        <input type="submit" name="Cadastrar" value="Cadastrar" class="btn btn-outline-primary">
+        <input type="submit" name="Cadastrar" value="Cadastrar" class="btn btn-outline-danger">
     </form>
     </div>
 

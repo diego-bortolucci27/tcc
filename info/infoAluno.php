@@ -30,7 +30,7 @@
     <div class="table-responsive">
         <table class="table">
             <thead class="bg-danger">
-            <tr class="cabeçalho">
+            <tr class="cabeçalho" style="color: white">
                 <th scope="col">RM</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Série</th>

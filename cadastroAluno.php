@@ -72,7 +72,7 @@
             <label class="nolabel custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02" align="left" style="color: black">Escolha o arquivo</label>
           </div>
         </div>
-        <input type="submit" value="Enviar" class="btn btn-outline-primary">
+        <input type="submit" value="Enviar" class="btn btn-outline-danger">
     </form>
 
     <br>
@@ -133,7 +133,7 @@
           <label style="color: black;" for="emailResponsavel">Email Responsável</label>
           <input type="text" class="form-control" id="emailResponsavel" name="emailResponsavel" placeholder="Ex: antonio_cardoso@gmail.com">
         </div>
-        <input type="submit" value="Cadastrar" class="btn btn-outline-primary">
+        <input type="submit" value="Cadastrar" class="btn btn-outline-danger">
     </form>
     </div>
 

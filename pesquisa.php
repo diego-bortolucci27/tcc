@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="titulo">
+        <div class="titulo" style="margin-top: 40px;">
             <center>
                 <h1 class="h1">Pesquisar</h1>
             </center>
@@ -23,7 +23,7 @@
                 <form action="processaPesquisa.php" method="post">
                     <div class="form-group col-md-6">
                         <input type="text" class="form-control" id="busca" name="busca" placeholder="Digite o nome ou RM"><br>
-                        <input type="submit" value="Pesquisar" class="btn btn-primary">
+                        <input type="submit" value="Pesquisar" class="btn btn-outline-danger">
                     </div>
                 </form>
             </center>
