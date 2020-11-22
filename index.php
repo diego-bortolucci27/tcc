@@ -15,10 +15,14 @@
 <body class="body" style="background-image: url(img/cps.jpeg);">
 <div class="container-fluid corpo">
     <section>
-        <div>
-            <h1 class="display-4 cabecalho">Página Inicial</h1>
-            <p class="lead subtitulo">Sistema De Controle</p>
+        <div style="background: white; opacity: 0.7;">
+            <h1 class="display-4">Página Inicial</h1>
+            <p class="lead">Sistema De Controle</p>
             <hr class="my-4" >
+            <a href="formLogin.php" style="color: black;">
+                <img src="img/login2.png" alt="login" srcset="" style="width: 70px; height: 70px;">
+                <p style="text-align: left; font-size: 15pt;">Fazer Login</p>
+            </a>
         </div>
     </section>
     <!--
@@ -111,10 +115,10 @@
         </button></a>
         <br>
 
-        <a href="adm.php">
+        <!--a href="adm.php">
             <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" data-toggle="modal" data-target="#staticBackdrop1">Página do Administrador
         </button></a>
-        <br>
+        <br-->
 
         <!--a href="https://wa.me/5519994425961?text=sua%20mensagem">Chamar no WhatsApp</a-->
     </div>

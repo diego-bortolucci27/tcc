@@ -1,7 +1,17 @@
 <?php
 
-    include_once 'conexao.php';
+    session_start();
     include_once 'navbar.php';
+?>
+<p style="color: white;">
+    <?php
+        include_once 'verifica_login.php';
+    ?>
+</p>
+
+<?php
+    include_once 'conexao.php';
+
     include_once 'head.php';
 ?>
 
@@ -79,7 +89,22 @@
         <br>
 
         <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Gerar relatórios</button>
+
+        <br><br>
+
+            <a href="https://wa.me/5519994425961?text=Olá,%20seu%20filho%20chegou%20atrasado%20na%20escola">
+                <img src="img/Whatsapp_icon-icons.com_66931.png" alt="whatsapp" srcset="" style="width: 75px; height: 75px;">
+                <p><b>Enviar Mensagem</b></p>
+            </a>
+
     </div>
+
+    <h2>
+        <a href="logout.php">
+            <img src="img/logout_3622.png" alt="logout" srcset="" style="width: 75px; width: 75px; position: relative; left: 1800px;">
+            <p style="text-align: right; margin-right: 50px;">Sair</p>
+        </a>
+    </h2>
     
 </body>
 </html>
