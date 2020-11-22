@@ -35,13 +35,13 @@
   </div>
 </section>
     <!--contato-->
-    <div class="jumbotron jumbotron-fluid" style='background-color: #DC300B; margin-top: -25px; height: 400px;'>
+    <div class="jumbotron jumbotron-fluid footer" style='background-color: #DC300B; margin-top: -25px; height: 400px;'>
         <div class="container.fluid">
-        <h1 class="display-4" class="ajuda_sobre" style='color:white; margin-left:885px; font-size: 30px; float: none;'>CONTATO</h1>
+        <h1 class="display-4 ajuda_sobre" style='color:white; text-align: center; font-size: 30px; float: none;'>CONTATO</h1>
         </div>
             <!-- tabela --> 
      <section>       
-    <section class="tabela" style='width: 450px;height:350px; margin-left: 25px; margin-top: -30px; float:left;'>  
+    <section class="tabela" style='width: 450px;height:auto; margin-left: 25px; margin-top: -30px; float:left;'>  
     <table class="table" style='color:white'>
   <tbody>
     <tr>
@@ -76,7 +76,7 @@
         <!-- Info Escola-->
 
           <section class="info_escola" style='float: right; margin-top:-15px; margin-right: 55px;'> 
-          <section class="tabela" style='width: 450px;height:350px; margin-left: 20px;'>  
+          <section class="tabela" style='width: 450px;height:auto; margin-left: 20px;'>  
     <table class="table" style='color:white'>
   <tbody>
     <tr>
@@ -98,9 +98,9 @@
   </tbody>
 </table>
           </section>
+  </section>
 
     </div>
-  </section>
     <!--fim contato-->
  </body>
  </html>
