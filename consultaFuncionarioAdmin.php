@@ -45,7 +45,6 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Função</th>
                 <th scope="col">Email</th>
-                <th scope="col">Senha</th>
                 <th scope="col">Excluir</th>
                 <th scope="col">Alterar</th>
             </tr>
@@ -61,7 +60,6 @@
 				    <td class="table-active"> <?php echo $row['nome']; ?> </td>
 				    <td class="table-active"> <?php echo $row['funcao']; ?> </td>
                     <td class="table-active"> <?php echo $row['email']; ?> </td>
-                    <td class="table-active"> <?php echo $row['senha']; ?> </td>
                     <td class="table-active"><a href="deleteFuncionario.php?id=<?php echo $row['id']; ?>">Excluir</a></td>
                     <td class="table-active"><a href="dadosUpdateFuncionario.php?id=<?php echo $row['id'];?>">Alterar</a></td>
 			    </tr>

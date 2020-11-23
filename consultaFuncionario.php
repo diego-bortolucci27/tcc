@@ -45,7 +45,6 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Função</th>
                 <th scope="col">Email</th>
-                <th scope="col">Senha</th>
             </tr>
             </thead>
             <?php
@@ -59,7 +58,6 @@
 				    <td class="table-active"> <?php echo $row['nome']; ?> </td>
 				    <td class="table-active"> <?php echo $row['funcao']; ?> </td>
                     <td class="table-active"> <?php echo $row['email']; ?> </td>
-                    <td class="table-active"> <?php echo $row['senha']; ?> </td>
 			    </tr>
             </tbody>
             <?php
