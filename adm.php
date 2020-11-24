@@ -1,15 +1,8 @@
 <?php
 
     session_start();
-    include_once 'navbar.php';
-?>
-<p style="color: white;">
-    <?php
-        include_once 'verifica_login.php';
-    ?>
-</p>
-
-<?php
+    include_once 'verifica_login.php';
+    include_once 'navbarAdmin.php';
     include_once 'conexao.php';
     include_once 'head.php';
 ?>
@@ -18,13 +11,15 @@
     <html lang="pt-br">
 <head>
         <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="css/adm.css">
     <title>Administração</title>
 </head>
 <body>
-    <div class="container-fluid">
+<div class="container-fluid">
+    <div>
+        <br>
+        <?php echo "<h4>" . 'Usuário conectado: ' . $_SESSION['usuario'] . "</h4>";  ?>
         <center>
             <h1 style="font-size: 30pt; padding: 40px 0px 0px 0px;"><b>Administração</b></h1>
         </center>
@@ -91,10 +86,10 @@
 
     <h2>
         <a href="logout.php">
-            <img src="img/logout_3622.png" alt="logout" srcset="" style="width: 75px; width: 75px; position: relative; left: 1800px;">
-            <p style="text-align: right; margin-right: 50px;">Sair</p>
+            <img src="img/logout_3622.png" alt="logout" srcset="" style="width: 75px; width: 75px;">
+            <p style="margin-left: 15px;">Sair</p>
         </a>
     </h2>
-    
+</div>
 </body>
 </html>

@@ -17,7 +17,9 @@
 	$usuario = mysqli_real_escape_string($conexao, $_POST['usuario']);
 	$senha = mysqli_real_escape_string($conexao, $_POST['senha']);
 
-	$query = "SELECT nome, senha FROM funcionarios WHERE nome = '{$usuario}' AND senha = '{$senha}'";
+	$senhaCrip = base64_encode($senha);
+
+	$query = "SELECT nome, senha FROM funcionarios WHERE nome = '{$usuario}' AND senha = '{$senhaCrip}'";
 
 	$result = mysqli_query($conexao, $query);
 

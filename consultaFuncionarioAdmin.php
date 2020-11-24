@@ -1,8 +1,10 @@
 <?php
 
+    session_start();
+    include_once 'verifica_login.php';
+    include_once 'navbarAdmin.php';
     require_once 'conexao.php';
     require_once 'head.php';
-    require_once 'navbar.php';
 
     $sql = "SELECT * FROM funcionarios";
     $query = mysqli_query($conexao, $sql);
