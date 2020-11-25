@@ -13,9 +13,11 @@
     $senhaCrip = base64_encode($senha);
 
     $sql = "UPDATE funcionarios SET senha = '$senhaCrip', funcao = '$funcao', nome = '$nome', email = '$email' WHERE id = '$id'";
-
-    $query = mysqli_query($conexao, $sql);
-
+    
+    if(empty($id) OR empty($nome) OR empty($funcao) OR empty($senhaCrip) OR empty($email))
+        echo "Não foi possível alterar!";
+    else
+        $query = mysqli_query($conexao, $sql);
     if($query){
 ?>
 

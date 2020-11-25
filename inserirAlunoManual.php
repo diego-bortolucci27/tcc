@@ -28,8 +28,10 @@
   '$email_responsavel
   ')";
 
-   $query = mysqli_query($conexao, $sql);
-
+    if(empty($rm) OR empty($nome) OR empty($serie) OR empty($curso))
+        echo "Não foi possível cadastrar";
+    else
+        $query = mysqli_query($conexao, $sql);
    if ($query){
 
     ?>

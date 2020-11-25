@@ -15,16 +15,18 @@
 
   $sql = "INSERT INTO funcionarios (id, senha, funcao, nome, email) VALUES ('$id', '$senhaCrip','$funcao','$nome','$email')";
 
-   $query = mysqli_query($conexao, $sql);
-
-  if ($query){
+    if(empty($id) OR empty($nome) OR empty($senhaCrip) OR empty($funcao) OR empty($email))
+        echo "não foi possível cadastrar!";
+    else
+        $query = mysqli_query($conexao, $sql);
+    if ($query){
 
 ?>
 
     <script>
 
         window.alert('Cadastro realizado com sucesso!');
-  	    document.location.href = 'adm.php';
+  	    document.location.href = 'consultaFuncionarioAdmin.php';
 
     </script>
 
@@ -38,7 +40,7 @@
     <script>
 
         window.alert('O cadastro não pode ser realizado!');
-  	    document.location.href = 'cadastroFuncionario.php';
+  	    document.location.href = 'consultaFuncionarioAdmin.php';
 
     </script>
 

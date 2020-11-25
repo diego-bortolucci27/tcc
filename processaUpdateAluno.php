@@ -24,8 +24,10 @@
     email_Responsavel = '$email_responsavel'
     WHERE rm = '$rm'";
 
-    $query = mysqli_query($conexao, $sql);
-
+    if(empty($rm) OR empty($nome) OR empty($serie) OR empty($curso))
+        echo "Não foi possível alterar!";
+    else
+        $query = mysqli_query($conexao, $sql);
     if($query){
 ?>
 
@@ -44,7 +46,7 @@
     <script>
 
         window.alert('O cadastro não pode ser alterado!');
-        document.location.href = 'dadosUpdateAluno.php';
+        document.location.href = 'consultaAlunoAdmin.php';
 
     </script>
 
