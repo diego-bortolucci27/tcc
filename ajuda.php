@@ -1,21 +1,19 @@
 <?php
-  require_once 'navbar.php';
+
+    require_once 'navbar.php';
+    require_once 'head.php';
+
 ?>
 
  <!DOCTYPE html>
  <html lang="pt-br">
  <head>
      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="web/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="web/css/estilo.css">
-    <link rel="stylesheet" href="web/css/grid.css">
-    <link rel="stylesheet" href="web/css/reset.css">
      <title>Ajuda</title>
  </head>
  <body>
   <!-- INFO 1 -->
+<divs>
 
   <div class="jumbotron jumbotron-fluid" style='background-color: #DC300B;'>
   <div class="container.fluid">
@@ -34,6 +32,55 @@
     </div>
   </div>
 </section>
+
+<!--section>
+<center>
+    <h1 style="text-align: center; font-size: 16pt;"><b>Envie a sua pergunta</b></h1><br>
+<form method="POST" action="help.php">
+  <div class="form-group">
+    <label for="email">Endereço de email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com" style="width: 900px;">
+  </div>
+  <div class="form-group">
+    <center>
+        <label for="texto">Digite a sua pergunta</label>
+        <textarea class="form-control" id="texto" name="texto" rows="3" style="width: 900px;"></textarea><br>
+        <input type="submit" class="btn btn-outline-danger" name="btnEnviar" value="Enviar">
+    </center>
+  </div>
+</form>
+</center>
+</section>
+
+<br><br>
+
+
+    <form method="post" action="help.php" name="Inputform">
+        <table border="0" width="50%">
+            <tr>
+                <td width="48%" align="right">DE:</td>
+                <td width="52%"><input type="text" name="from" size="20" style="width:100%;" /></td>
+            </tr>
+            <tr>
+                <td width="48%" align="right">ASSUNTO:</td>
+                <td width="52%"><input type="text" name="assunto" size="20" style="width:100%;" /></td>
+            </tr>
+            <tr>
+                <td width="48%" align="right">MENSAGEM:</td>
+                <td width="52%"><textarea rows="4" name="mensagem" cols="26" style="width:100%;"></textarea></td>
+            </tr>
+            <tr>
+                <td width="100%" align="center" colspan="2"><input type="submit" value="Enviar" /></td>
+            </tr>
+        </table>
+    </form>
+  
+<br><br-->
+
+
+
+<br><br>
+
     <!--contato-->
     <div class="jumbotron jumbotron-fluid footer" style='background-color: #DC300B; margin-top: -25px; height: 400px;'>
         <div class="container.fluid">
@@ -102,5 +149,6 @@
 
     </div>
     <!--fim contato-->
+</div>
  </body>
  </html>
