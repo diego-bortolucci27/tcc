@@ -79,7 +79,7 @@
 
         <br>
 
-        <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Gerar relatórios</button>
+        <a href="relatorio.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Gerar relatórios</button></a>
 
         <br><br>
     </div>
