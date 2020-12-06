@@ -14,7 +14,7 @@
     $telefone_responsavel = $_POST['telResponsavel'];
     $email_responsavel = $_POST['emailResponsavel'];
 
-    $sql = "UPDATE alunos SET nome ='$nome',
+    $sql = "UPDATE alunos SET nome = '$nome',
     serie = '$serie',
     curso = '$curso',
     telefone = '$telefone',

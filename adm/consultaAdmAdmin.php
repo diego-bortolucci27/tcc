@@ -6,7 +6,8 @@
     require_once '../head.php';
     require_once 'navbar.php';
 
-    $sql = "SELECT * FROM alunos WHERE curso = 'ETIM ADMINISTRAÇÃO'";
+    $sql = "SELECT * FROM alunos 
+    WHERE curso = 'ETIM ADMNISTRAÇÃO'";
     $query = mysqli_query($conexao, $sql);
 ?>
 
@@ -16,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/consulta.css">
-    <title>Consulta</title>
+    <title>Consulta - ETIM ADM</title>
 </head>
 <body>
 <div class="container-fluid">
