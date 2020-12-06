@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21-Nov-2020 às 01:46
+-- Tempo de geração: 06-Dez-2020 às 00:54
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.11
 
@@ -45,7 +45,19 @@ CREATE TABLE `alunos` (
 --
 
 INSERT INTO `alunos` (`rm`, `digital`, `nome`, `serie`, `curso`, `telefone`, `email`, `nome_responsavel`, `telefone_responsavel`, `email_Responsavel`) VALUES
-(18169, 456, 'Marcus', '3º Ano', 'ETIM INFOWEB', '(19) 99450-0618', 'marcus.vinicius2002@hotmail.com', 'Walquiria Aparecida', '(15) 89746-6315', 'cleito@gmail.com\r\n  ');
+(18110, 456, 'Abel Luis Santos', '1º Ano', 'ETIM INFOWEB', '(19) 98965-3210', 'abel.santos@etec.sp.gov.br', 'Luis Santos', '(19) 95631-2593', 'luis.santos@hotmail.com  '),
+(18111, 456, 'Eduardo Castro', '2º Ano', 'ETIM INFOWEB', '(19) 98953-2014', 'eduardo.castro@etec.sp.gov.br', 'Cátia Castro', '(19) 95362-0156', 'catia.castro@gmail.com\r\n  '),
+(18112, 456, 'Eduarda Melo', '3º Ano', 'ETIM INFOWEB', '(19) 95364-5220', 'eduarda.melo@etec.sp.gov.br', 'Sandro Melo', '(19) 98996-5395', 'sandro.melo@gmail.com'),
+(18113, 456, 'Amanda Pereira', '1º Ano', 'ETIM ADMNISTRAÇÃO', '(19) 99953-5489', 'amanda.pereira@etec.sp.gov.br', 'Leila Pereira', '(19) 98996-5395', 'leila.pereira@gmail.com\r\n  '),
+(18114, 456, 'Letícia Alves', '2º Ano', 'ETIM ADMNISTRAÇÃO', '(19) 98952-6566', 'leticia.alves@etec.sp.gov.br', 'Júlia Alves', '(19) 96456-4512', 'julia.alves@outlook.com.br  '),
+(18115, 456, 'Júlia Arantes', '3º Ano', 'ETIM ADMNISTRAÇÃO', '(19) 95695-5237', 'julia.arantes@etec.sp.gov.br', 'Márcia Arantes', '(19) 99797-2160', 'marcia.arantes@outlook.com.br\r\n  '),
+(18129, 456, 'Diego Lopes Bortolucci', '3º Ano', 'ETIM INFOWEB', '(19) 99442-5961', 'diego.bortolucci@etec.sp.gov.br', 'Airton Fernando Bortolucci', '(19) 99442-5961', 'abortolucci67@gmail.com  '),
+(18137, 456, 'Laura Moreira', '2º Ano', 'ETIM ADMNISTRAÇÃO', '(19) 99454-2315', 'laura.moreira@etec.sp.gov.br', 'Marcelo Moreira', '(19) 99225-3610', 'marcelo.moreira@outlook.com\r\n  '),
+(18138, 456, 'Pedro Oliveira', '3º Ano', 'ETIM INFOWEB', '(19) 99995-4545', 'pedro.oliveira@etec.sp.gov.br', 'Carlos Oliveira', '(19) 98598-5945', 'carlos.eduardo@outlook.com  '),
+(18140, 456, 'Vitória Ferreira', '1º Ano', 'ETIM ADMNISTRAÇÃO', '(19) 99442-5962', 'vitoria.ferreira@etec.sp.gov.br', 'Laura Ferreira', '(19) 99226-1234', 'laura.ferreira@outlook.com\r\n  '),
+(18142, 456, 'Tiago Souza', '3º Ano', 'ETIM ADMNISTRAÇÃO', '(19) 98539-4321', 'tiago.souza@etec.sp.gov.br', 'Andréia Souza', '(19) 98534-9630', 'andreia.souza@outlook.com\r\n  '),
+(18147, 456, 'Augusto Oliveira', '1º Ano', 'ETIM INFOWEB', '(19) 99665-3482', 'augusto.oliveira@etec.sp.gov.br', 'Jair Oliveira', '(19) 99886-6321', 'jair.oliveira@outlook.com\r\n  '),
+(18169, 456, 'Vitor Ádrian', '2º Ano', 'ETIM INFOWEB', '(19) 98946-3120', 'vitor.adrian@etec.sp.gov.br', 'Marcio Alves', '(19) 99365-2085', 'marcio.alves@hotmail.com  ');
 
 -- --------------------------------------------------------
 
@@ -66,11 +78,11 @@ CREATE TABLE `funcionarios` (
 --
 
 INSERT INTO `funcionarios` (`id`, `senha`, `funcao`, `nome`, `email`) VALUES
-(3, '77+977+9', 'Vigia', 'Marcus', 'marcus.vinicius2002@hotmail.com'),
-(4, 'Y2F2YWxvMTIzNA==', 'Vigia', 'Viniciús', 'cleito@gmail.com'),
-(5, 'MTIzNDU2Nzg5MQ==', 'vigia', 'augusto', 'augusto@hotmail.com'),
-(6, 'MTk4NzY1NDMyMQ==', 'secretaria:varlei', 'varlei@gmail.com', ''),
-(7, 'MTIzNDU2Nzg5MA==', 'Secretaria', 'cleito', 'gerggregergrgergreg');
+(1, 'yaMJQg==', 'Função', 'messias', 'jair@outlook.com.br'),
+(2, '&~6?:PrC^???6', 'Vigia', 'cleito', 'cleito@gmail.com'),
+(3, 'UGFsbWVpcmFzMTA=', 'Vigia', 'Lemão', 'lemao@gmail.com'),
+(4, '1234', 'Vigia', 'diego', 'bortolucci.diego@gmail.com'),
+(6, 'UGFsbWVpcmFzMDE=', 'Secretaria', 'Marcus', 'marcus');
 
 -- --------------------------------------------------------
 
@@ -81,16 +93,16 @@ INSERT INTO `funcionarios` (`id`, `senha`, `funcao`, `nome`, `email`) VALUES
 CREATE TABLE `horario` (
   `rm` mediumint(6) NOT NULL,
   `id` mediumint(6) NOT NULL,
-  `entrada` datetime NOT NULL,
-  `saida` datetime NOT NULL
+  `saida` datetime NOT NULL,
+  `entrada` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `horario`
 --
 
-INSERT INTO `horario` (`rm`, `id`, `entrada`, `saida`) VALUES
-(18169, 256, '2020-11-20 06:44:18', '2020-11-20 12:44:18');
+INSERT INTO `horario` (`rm`, `id`, `saida`, `entrada`) VALUES
+(18138, 1, '2020-09-09 15:20:21', '2020-09-09 08:20:21');
 
 -- --------------------------------------------------------
 
@@ -147,7 +159,7 @@ ALTER TABLE `horario`
 -- AUTO_INCREMENT de tabela `funcionarios`
 --
 ALTER TABLE `funcionarios`
-  MODIFY `id` mediumint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` mediumint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
