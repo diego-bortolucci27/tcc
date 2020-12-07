@@ -82,7 +82,7 @@
                     <td class="table-active"> <?php echo $row['telefone']; ?> </td>
                     <td class="table-active"> <?php echo $row['email']; ?> </td>
                     <td class="table-active"> <?php echo $row['nome_responsavel']; ?> </td>
-                    <td class="table-active"> <a href="https://wa.me/55<?php echo $row['telefone_responsavel']?>?text="> <?php echo $row['telefone_responsavel']; ?> </a></td>
+                    <td class="table-active"> <a target="_blank" href="https://api.whatsapp.com/send?phone=55<?php echo $row['telefone_responsavel']?>?text="> <?php echo $row['telefone_responsavel']; ?> </a></td>
                     <td class="table-active"> <?php echo $row['email_Responsavel']; ?> </td>
                     <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
                     <td class="table-active"><a href="deleteAluno.php?rm=<?php echo $row['rm'] ?>">Excluir</a></td>

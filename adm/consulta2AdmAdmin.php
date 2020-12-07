@@ -1,10 +1,10 @@
 <?php
     session_start();
-    include_once '../verifica_login.php';
-    require_once '../conexao.php';
-    require_once '../head.php';
-    require_once 'navbar.php';
-
+    include_once 'verifica_login.php';
+    include_once 'navbarAdmin.php';
+    require_once 'conexao.php';
+    require_once 'head.php';
+    
     $sql = "SELECT * FROM alunos 
     WHERE curso = 'ETIM ADMNISTRAÇÃO' AND serie = '2º Ano'";
     $query = mysqli_query($conexao, $sql);
@@ -86,7 +86,7 @@
                     <td class="table-active"> <?php echo $row['telefone']; ?> </td>
                     <td class="table-active"> <?php echo $row['email']; ?> </td>
                     <td class="table-active"> <?php echo $row['nome_responsavel']; ?> </td>
-                    <td class="table-active"> <?php echo $row['telefone_responsavel']; ?> </td>
+                    <td class="table-active"> <a target="_blank" href="https://api.whatsapp.com/send?phone=55<?php echo $row['telefone_responsavel']?>?text="> <?php echo $row['telefone_responsavel']; ?> </a></td>
                     <td class="table-active"> <?php echo $row['email_Responsavel']; ?> </td>
                     <td class="table-active"><a href="infoAluno.php?rm=<?php echo $row['rm'] ?>">Ver Informações</a></td>
                     <td class="table-active"><a href="../deleteAluno.php?rm=<?php echo $row['rm'] ?>">Excluir</a></td>

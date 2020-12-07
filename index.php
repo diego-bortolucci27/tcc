@@ -115,6 +115,11 @@
         </button></a>
         <br>
 
+        <a href="adm.php">
+            <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" data-toggle="modal" data-target="#staticBackdrop1">Administrador
+        </button></a>
+        <br>
+
         <!--a href="adm.php">
             <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" data-toggle="modal" data-target="#staticBackdrop1">Página do Administrador
         </button></a>

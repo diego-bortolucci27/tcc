@@ -15,6 +15,9 @@
         <a class="nav-link" style="color: white;" href="../controle.php">Controle</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" style="color: white;" href="../adm.php">Admin</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" style="color: white;" href="../ajuda.php">Ajuda</a>
       </li>
     </ul>

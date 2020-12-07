@@ -28,16 +28,16 @@
         $objeto = fopen($arquivo, 'r');
   
         while(($dados = fgetcsv($objeto, 1000, ";")) !== FALSE){
-          $rm = $dados[1];
-          $digital = $dados[2];
-          $nome = $dados[3];
-          $serie = $dados[4];
-          $curso = $dados[5];
-          $telefone = $dados[6];
-          $email = $dados[7];
-          $nome_responsavel = $dados[8];
-          $telefone_responsavel = $dados[9];
-          $email_responsavel = $dados[10];
+          $rm = $dados[0];
+          $digital = $dados[1];
+          $nome = $dados[2];
+          $serie = $dados[3];
+          $curso = $dados[4];
+          $telefone = $dados[5];
+          $email = $dados[6];
+          $nome_responsavel = $dados[7];
+          $telefone_responsavel = $dados[8];
+          $email_responsavel = $dados[9];
   
           $result = mysqli_query($conexao, "INSERT INTO alunos (rm, digital, nome, serie, curso, telefone, email, nome_responsavel, telefone_responsavel, email_Responsavel)VALUES ('$rm', '$digital', '$nome', '$serie', '$curso', '$telefone', '$email', '$nome_responsavel', '$telefone_responsavel', '$email_responsavel')");
   
