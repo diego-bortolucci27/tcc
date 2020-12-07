@@ -20,6 +20,8 @@
       <li class="nav-item">
         <a class="nav-link" style="color: white;" href="adm.php">Admin</a>
       </li>
+    </ul>
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item">
         <a class="nav-link" style="color: white;" href="formLogin.php">Login</a>
       </li>

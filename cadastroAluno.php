@@ -74,7 +74,6 @@
         </div>
         <input type="submit" value="Enviar" class="btn btn-outline-danger">
     </form>
-
     <br>
 
     <form action="inserirAlunoManual.php" method="GET">
