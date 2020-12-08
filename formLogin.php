@@ -1,11 +1,9 @@
 <?php
 
+    session_start();
     require_once 'conexao.php';
     require_once 'head.php';
     require_once 'navbar.php';
-
-    session_start();
-
 ?>
 
 <!DOCTYPE html>

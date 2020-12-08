@@ -25,69 +25,24 @@
             </a>
         </div>
     </section>
-    <!--
-    <center>
-    <h1 style="color: black;"> Mais Informações: </h1>
-    
-    <section class="container">
-        <center>
-        <div class="row" align="center">
-            <div class="card" style="width: 40rem;" align="center">
-                <div class="card-body">
-                    <h5 class="card-title" style="color: black;font-size: 30px">Informações:</h5>
-                    <p class="card-text" style="color: black;font-size: 20px">Funções</p>
-                     Example split danger button>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Indice</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="cadastro.php">Cadastrar</a>
-                        <a class="dropdown-item" href="consulta.php">Consulta</a>
-                        <a class="dropdown-item" href="alterar.php">Alterar Cadastro</a>
-                        <a class="dropdown-item" href="deletar.html">Excluir Cadastro</a>
-                        <a class="dropdown-item" href="pesquisa.php">Pesquisar</a>
-                        <a class="dropdown-item" href="info/consultaInfo.php">Etim Infoweb</a>
-                        <a class="dropdown-item" href="adm/consultaAdm.php">Etim Adm</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        </center>
-    </section>
-    </center>
-    <br>
-    -->
-    <!--section class="container-fluid">
-            <div class="jumbotron">
-                <h1 class="display-4">Sistema de Controle de Entrada e Saída</h1>
-                <p class="lead"> Sistema Administrativo</p>
-                <hr class="my-4">
-                <p>Cadastro | Consulta | Exclusão | Atualização de Dados</p><br>
-                <a href="pesquisa.php">
-                    <button type="button" class="btn btn-outline-primary">Pesquisar</button>
-                </a>
-            </div>
-    </section-->
-
+   
     <div class="container" style="padding: 40px;">
-        <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" data-toggle="modal" data-target="#staticBackdrop">
+
+        <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" data-toggle="modal" data-target="#staticBackdrop1">
         Consultar Cadastros
         </button>
 
-        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Consultar Cadastros</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Exibir Cadastros</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <a href="consultaAluno.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao">Alunos</button></a>
+                        <a href="consultaAluno.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Alunos</button></a>
                         <br>
                         <a href="consultaFuncionario.php"><button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" >Funcionários</button></a>
                     </div>
@@ -97,6 +52,10 @@
                 </div>
             </div>
         </div>
+
+        <!--a href="consultaAluno.php">
+            <button type="button" class="btn btn-primary btn-lg btn-block border border-light" id="botao" data-toggle="modal" data-target="#staticBackdrop1">Consultar Cadastros
+        </button></a-->
 
         <br>
 
