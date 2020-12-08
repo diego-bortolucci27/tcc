@@ -27,7 +27,7 @@
     }else{
         $objeto = fopen($arquivo, 'r');
   
-        while(($dados = fgetcsv($objeto, 1000, ";")) !== FALSE){
+        while(($dados = fgetcsv($objeto, 1000, ",")) !== FALSE){
           $rm = $dados[0];
           $digital = $dados[1];
           $nome = $dados[2];

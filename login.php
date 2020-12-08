@@ -19,7 +19,7 @@
 
 	$senhaCrip = base64_encode($senha);
 
-	$query = "SELECT nome, senha FROM funcionarios WHERE nome = '{$usuario}' AND senha = '{$senhaCrip}'";
+	$query = "SELECT nome, senha FROM funcionarios WHERE usuario = '{$usuario}' AND senha = '{$senhaCrip}'";
 
 	$result = mysqli_query($conexao, $query);
 

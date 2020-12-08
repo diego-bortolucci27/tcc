@@ -98,7 +98,7 @@
           <input type="password" class="form-control" placeholder="Senha" required="required" minlength="10" maxlength="20" id="input" name="senha" value="<?php echo base64_decode($senha); ?>">
           <img draggable="false" src="http://i.stack.imgur.com/H9Sb2.png" alt="" id="img" align="right">
         </div>
-        <input type="submit" value="Atualizar" class="btn btn-outline-primary">
+        <input type="submit" value="Atualizar" class="btn btn-outline-danger">
     </form>
     </div>
 

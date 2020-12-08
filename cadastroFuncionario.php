@@ -84,16 +84,28 @@ window.onload=function(){
     <h1 class="titulo" style="margin-top: 50px">Adicionar manualmente</h1>
         <input type="hidden" name="id" value="" style="height: 1px;">
         <br>
+
+        <div class="form-group col-md-6">
+          <label style="color: black;" for="id"></label>
+          <input type="hidden" class="form-control" id="id" name="id" aria-describedby="emailHelp">
+        </div>
+
         <div class="form-group col-md-6">
           <label style="color: black;" for="nome">Nome Completo</label>
           <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp" placeholder="EX: Luís Eduardo Santos">
         </div>
+
+        <div class="form-group col-md-6">
+          <label style="color: black;" for="usuario">Nome de Usuário</label>
+          <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="EX: Luis">
+        </div>
+
         <div class="form-group col-md-6">
           <label style="color: black;" for="funcao">Função</label>
             <select class="custom-select" id="funcao" name="funcao">
               <option style="color: black;" selected hidden>Função</option>
               <option style="color: black;" value="Secretaria">Secretaria</option>
-              <option style="color: black;" value="Vigia">Vigia</option>
+              <option style="color: black;" value="Coordenador">Coordenação</option>
             </select>
         </div>
         <div class="form-group col-md-6">
