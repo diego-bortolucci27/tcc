@@ -6,11 +6,12 @@
 
   $rm = $_GET['rm'];
 
-  $sql = "SELECT * FROM alunos WHERE rm='$rm'";
+  $sql = "SELECT * FROM alunos WHERE rm ='$rm'";
   $query = mysqli_query($conexao, $sql);
 
   while($row = mysqli_fetch_array($query))
   {
+    $rm = $row['rm'];
     $nome = $row['nome'];
     $serie = $row['serie'];
     $curso = $row['curso'];
@@ -76,8 +77,17 @@
     
     <form action="processaUpdateAluno.php" method="POST">
         <br>
+
         <div class="form-group col-md-6">
-          <input type="hidden" name="rm" value="<?php echo $rm ?>">
+          <input type="hidden" class="form-control" id="rmm" name="rmm" value="<?php echo $rm ?>">
+        </div> 
+
+        <div class="form-group col-md-6">
+          <label style="color: black;" for="rm">RM</label>
+          <input type="number" class="form-control" id="rm" name="rm" value="<?php echo $rm ?>">
+        </div>
+
+        <div class="form-group col-md-6">
           <label style="color: black;" for="nome">Nome Completo</label>
           <input type="text" class="form-control" id="nome" name="nome" value="<?php echo $nome ?>">
         </div>
@@ -126,7 +136,7 @@
           <label style="color: black;" for="emailResponsavel">Email Responsável</label>
           <input type="text" class="form-control" id="emailResponsavel" name="emailResponsavel" value="<?php echo $email_responsavel ?>">
         </div>
-        <input type="submit" value="Atualizar" class="btn btn-outline-primary">
+        <input type="submit" value="Atualizar" class="btn btn-outline-danger">
     </form>
     </div>
 
