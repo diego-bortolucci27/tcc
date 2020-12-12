@@ -29,14 +29,15 @@
   
         while(($dados = fgetcsv($objeto, 1000, ";")) !== FALSE){
           $id = $dados[0];
-          $senha = $dados[1];
-          $funcao = $dados[2];
-          $nome = $dados[3];
-          $email = $dados[4];
+          $usuario = $dados[1];
+          $senha = $dados[2];
+          $funcao = $dados[3];
+          $nome = $dados[4];
+          $email = $dados[5];
 
           $senhaCrip = base64_encode($senha);
   
-          $result = mysqli_query($conexao, "INSERT INTO funcionarios (id, senha, funcao, nome, email) VALUES ('$id', '$senhaCrip','$funcao','$nome','$email')");
+          $result = mysqli_query($conexao, "INSERT INTO funcionarios (id, usuario, senha, funcao, nome, email) VALUES ('$id', '$usuario', '$senhaCrip','$funcao','$nome','$email')");
   
         }
   
